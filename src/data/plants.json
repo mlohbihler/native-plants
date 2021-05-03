@@ -1,0 +1,6009 @@
+{
+  "version": "0.0.1",
+  "metadata": {
+    "genus": {
+      "description": "Genus-specific part of the scientific name",
+      "type": "string",
+      "required": true
+    },
+    "specificEpithet": {
+      "description": "Specific epithet of the scientific name",
+      "type": "string",
+      "required": true
+    },
+    "commonNames": {
+      "description": "Common names",
+      "type": "array<string>"
+    },
+    "hardinessZones": {
+      "description": "Hardiness zones",
+      "type": "min, max"
+    },
+    "naturalLocations": {
+      "description": "Where this plant is known to grow naturally",
+      "type": "array<string>"
+    },
+    "duration": {
+      "description": "Lifetime of plant",
+      "type": "enum",
+      "values": ["Annual", "Biennial", "Perennial"]
+    },
+    "growthHabit": {
+      "description": "Growth habit",
+      "type": "enum",
+      "values": ["forb", "graminoid", "lichenous", "nonvascular", "shrub", "subshrub", "tree", "vine"]
+    },
+    "leafRetention": {
+      "description": "Evergreen or deciduous",
+      "type": "boolean"
+    }
+  },
+  "plants": [
+    {
+      "genus": "Abies",
+      "specificEpithet": "balsamea",
+      "commonNames": ["Balsam Fir"],
+      "usdaCode": "ABBAP",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "R" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": true,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Juniperus",
+      "specificEpithet": "virginiana",
+      "commonNames": ["Eastern Red Cedar"],
+      "usdaCode": "JUVI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "D" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [12, 17, 38] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": true,
+      "hardinessZones": { "min": "2", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 40
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Picea",
+      "specificEpithet": "mariana",
+      "commonNames": ["Black Spruce"],
+      "usdaCode": "PIMA",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "X": [35, 36] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": true,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Picea",
+      "specificEpithet": "glauca",
+      "commonNames": ["White Spruce"],
+      "usdaCode": "PIGL",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": true,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Pinus",
+      "specificEpithet": "resinosa",
+      "commonNames": ["Red Pine"],
+      "usdaCode": "PIRE",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "U" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": true,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Thuja",
+      "specificEpithet": "occidentalis",
+      "commonNames": ["Eastern White Cedar"],
+      "usdaCode": "THOC2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": true,
+      "hardinessZones": { "min": "2", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 30
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Tsuga",
+      "specificEpithet": "canadensis",
+      "commonNames": ["Eastern Hemlock"],
+      "usdaCode": "TSCA",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": true,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 75
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Acer",
+      "specificEpithet": "saccharum spp nigrum",
+      "commonNames": ["Black Maple"],
+      "usdaCode": "ACNI5",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [35, 36] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Acer",
+      "specificEpithet": "rubrum",
+      "commonNames": ["Red Maple"],
+      "usdaCode": "ACRU",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 60
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Acer",
+      "specificEpithet": "saccharinum",
+      "commonNames": ["Silver Maple"],
+      "usdaCode": "ACSA2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Acer",
+      "specificEpithet": "saccharum",
+      "commonNames": ["Sugar Maple"],
+      "usdaCode": "ACSA3",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 80
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Betula",
+      "specificEpithet": "papyrifera",
+      "commonNames": ["White Birch", "Paper Birch"],
+      "usdaCode": "BEPA",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "hardinessZones": { "min": "2", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 60
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Betula",
+      "specificEpithet": "allegheniensis",
+      "commonNames": ["Yellow Birch"],
+      "usdaCode": "BEAL2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Carpinus",
+      "specificEpithet": "caroliniana",
+      "commonNames": ["Blue Beech", "American Hornbeam"],
+      "usdaCode": "CACA18",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "X": [11, 17] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 35
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Carya",
+      "specificEpithet": "cordiformis",
+      "commonNames": ["Bitternut Hickory"],
+      "usdaCode": "CACO15",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "X": [11, 16, 17] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Carya",
+      "specificEpithet": "ovata",
+      "commonNames": ["Shagbark Hickory"],
+      "usdaCode": "CAOV2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "X": [11, 17, 38] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 80
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Celtis",
+      "specificEpithet": "occidentalis",
+      "commonNames": ["Hackberry"],
+      "usdaCode": "CEOC",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "X": [11, 16] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Crataegus",
+      "specificEpithet": "punctata",
+      "commonNames": ["Dotted Hawthorn"],
+      "usdaCode": "CRPU",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Fagus",
+      "specificEpithet": "grandifolia",
+      "commonNames": ["American Beech"],
+      "usdaCode": "FAGR",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Fraxinus",
+      "specificEpithet": "nigra",
+      "commonNames": ["Black Ash"],
+      "usdaCode": "FRNI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Fraxinus",
+      "specificEpithet": "pennsylvanica",
+      "commonNames": ["Red Ash", "Green Ash"],
+      "usdaCode": "FRPE",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Fraxinus",
+      "specificEpithet": "americana",
+      "commonNames": ["White Ash"],
+      "usdaCode": "FRAM2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Juglans",
+      "specificEpithet": "nigra",
+      "commonNames": ["Black Walnut"],
+      "usdaCode": "JUNI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [35, 36] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Juglans",
+      "specificEpithet": "cinerea",
+      "commonNames": ["Butternut"],
+      "usdaCode": "JUCI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "U" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Larix",
+      "specificEpithet": "laricina",
+      "commonNames": ["Tamarack"],
+      "usdaCode": "LALA",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "R" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "hardinessZones": { "min": "2", "max": "5" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 60
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Ostrya",
+      "specificEpithet": "virginiana",
+      "commonNames": ["Ironwood", "Hophornbeam"],
+      "usdaCode": "OSVI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Platanus",
+      "specificEpithet": "occidentalis",
+      "commonNames": ["Sycamore", "American Sycamore"],
+      "usdaCode": "PLOC",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "R" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "C": [35, 36] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Populus",
+      "specificEpithet": "balsamifera",
+      "commonNames": ["Balsam Poplar"],
+      "usdaCode": "POBA2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Populus",
+      "specificEpithet": "deltoides",
+      "commonNames": ["Eastern Cottonwood"],
+      "usdaCode": "PODED",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "C": [12], "U": [35, 36] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Populus",
+      "specificEpithet": "grandidentata",
+      "commonNames": ["Largetooth Aspen", "Bigtooth Aspen"],
+      "usdaCode": "POGR4",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Populus",
+      "specificEpithet": "tremuloides",
+      "commonNames": ["Trembling Aspen", "Quaking Aspen"],
+      "usdaCode": "POTR5",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Prunus",
+      "specificEpithet": "serotina",
+      "commonNames": ["Black Cherry"],
+      "usdaCode": "PRSE2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Quercus",
+      "specificEpithet": "velutina",
+      "commonNames": ["Black Oak"],
+      "usdaCode": "QUVE",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [35, 36], "R": [12] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Quercus",
+      "specificEpithet": "macrocarpa",
+      "commonNames": ["Bur Oak"],
+      "usdaCode": "QUMA2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 80
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Quercus",
+      "specificEpithet": "rubra",
+      "commonNames": ["Red Oak"],
+      "usdaCode": "QURU",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 75
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Quercus",
+      "specificEpithet": "bicolor",
+      "commonNames": ["Swamp White Oak"],
+      "usdaCode": "QUBI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "R" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [35] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Quercus",
+      "specificEpithet": "alba",
+      "commonNames": ["White Oak"],
+      "usdaCode": "QUAL",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Sassafras",
+      "specificEpithet": "albidum",
+      "commonNames": ["Sassafras"],
+      "usdaCode": "SAAL5",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [35, 36] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Tilia",
+      "specificEpithet": "americana",
+      "commonNames": ["Basswood", "American Basswood"],
+      "usdaCode": "TIAM",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Ulmus",
+      "specificEpithet": "thomasii",
+      "commonNames": ["Rock Elm"],
+      "usdaCode": "ULTH",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [35, 36] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Ulmus",
+      "specificEpithet": "rubra",
+      "commonNames": ["Slippery (Red) Elm"],
+      "usdaCode": "ULRU",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "C": [35, 36] } }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Ulmus",
+      "specificEpithet": "americana",
+      "commonNames": ["White Elm", "American Elm"],
+      "usdaCode": "ULAM",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "tree",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Juniperus",
+      "specificEpithet": "communis",
+      "commonNames": ["Common Juniper"],
+      "usdaCode": "JUCOD",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": true,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Juniperus",
+      "specificEpithet": "horizontalis",
+      "commonNames": ["Creeping Juniper"],
+      "usdaCode": "JUHO2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "U" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": true,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Taxus",
+      "specificEpithet": "canadensis",
+      "commonNames": ["American Yew", "Canada Yew"],
+      "usdaCode": "TACA7",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": true,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Acer",
+      "specificEpithet": "spicatum",
+      "commonNames": ["Mountain Maple"],
+      "usdaCode": "ACSP2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Acer",
+      "specificEpithet": "pennsylvanicum",
+      "commonNames": ["Striped Maple"],
+      "usdaCode": "ACPE",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "X": [35, 36] } }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Alnus",
+      "specificEpithet": "incana",
+      "commonNames": ["Speckled Alder"],
+      "usdaCode": "ALINR",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Amelanchier",
+      "specificEpithet": "sanguinea",
+      "commonNames": ["Roundleaf Serviceberry"],
+      "usdaCode": "AMSA",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Amelanchier",
+      "specificEpithet": "arborea",
+      "commonNames": ["Common Serviceberry"],
+      "usdaCode": "AMAR3",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Amelanchier",
+      "specificEpithet": "bartramiana",
+      "commonNames": ["Oblongfruit Serviceberry"],
+      "usdaCode": "AMBA",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [12] } }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Amelanchier",
+      "specificEpithet": "laevis",
+      "commonNames": ["Allegheny Serviceberry"],
+      "usdaCode": "AMLA",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Amelanchier",
+      "specificEpithet": "stolonifera",
+      "commonNames": ["Running Serviceberry"],
+      "usdaCode": "AMST80",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Amelanchier",
+      "specificEpithet": "humilis",
+      "commonNames": ["Low Serviceberry"],
+      "usdaCode": "AMHU2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Aronia",
+      "specificEpithet": "melanocarpa",
+      "commonNames": ["Chokeberry"],
+      "usdaCode": null,
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 6
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Betula",
+      "specificEpithet": "pumila var. glandulifera",
+      "commonNames": ["Dwarf Birch", "Bog Birch"],
+      "usdaCode": "BEPUG",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Cephalanthus",
+      "specificEpithet": "occidentalis",
+      "commonNames": ["Common Buttonbush"],
+      "usdaCode": "CEOC2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 8
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Chamaedaphne",
+      "specificEpithet": "calyculata",
+      "commonNames": ["Leatherleaf"],
+      "usdaCode": "CHCA2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Cornus",
+      "specificEpithet": "alternifolia",
+      "commonNames": ["Alternate-leaf Dogwood", "Pagoda Dogwood"],
+      "usdaCode": "COAL2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 25
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Cornus",
+      "specificEpithet": "racemosa",
+      "commonNames": ["Gray Dogwood"],
+      "usdaCode": "CORA6",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Cornus",
+      "specificEpithet": "stolonifera",
+      "commonNames": ["Red-osier Dogwood"],
+      "usdaCode": null,
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Cornus",
+      "specificEpithet": "rugosa",
+      "commonNames": ["Round-leaved Dogwood", "Roundleaf Dogwood"],
+      "usdaCode": "CORU",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Cornus",
+      "specificEpithet": "amomum",
+      "commonNames": ["Silky Dogwood"],
+      "usdaCode": "COAM2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Corylus",
+      "specificEpithet": "cornuta",
+      "commonNames": ["Beaked Hazel"],
+      "usdaCode": "COCOC2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Corylus",
+      "specificEpithet": "americana",
+      "commonNames": ["American Hazelnut"],
+      "usdaCode": "COAM3",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Crataegus",
+      "specificEpithet": "crus-galli",
+      "commonNames": ["Cockspur Hawthorn"],
+      "usdaCode": "CRCR2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "R" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "R": [38] } }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Crataegus",
+      "specificEpithet": "mollis",
+      "commonNames": ["Downy Hawthorn"],
+      "usdaCode": "CRMO2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Crataegus",
+      "specificEpithet": "flabellata",
+      "commonNames": ["Fanleaf Hawthorn"],
+      "usdaCode": null,
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Crataegus",
+      "specificEpithet": "chrysocarpa",
+      "commonNames": ["Fireberry Hawthorn"],
+      "usdaCode": null,
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Crataegus",
+      "specificEpithet": "succulenta",
+      "commonNames": ["Fleshy Hawthorn"],
+      "usdaCode": "CRSU5",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Diervilla",
+      "specificEpithet": "lonicera",
+      "commonNames": ["Nothern Bush Honeysuckle"],
+      "usdaCode": "DILO",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Dirca",
+      "specificEpithet": "palustris",
+      "commonNames": ["Eastern Leatherwood"],
+      "usdaCode": "DIPA9",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Euonymus",
+      "specificEpithet": "atropurpureus",
+      "commonNames": ["Burning-bush Euonymus", "Burningbush"],
+      "usdaCode": "EUAT5",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "R" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "R": [35, 38] } }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Hamamelis",
+      "specificEpithet": "virginiana",
+      "commonNames": ["Witchhazel", "American Witchhazel"],
+      "usdaCode": "HAVI4",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "X": [11, 16, 17] } }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 20
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Ilex",
+      "specificEpithet": "verticillata",
+      "commonNames": ["Common Winterberry"],
+      "usdaCode": "ILVE",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Lindera",
+      "specificEpithet": "benzoin",
+      "commonNames": ["Northern Spicebush"],
+      "usdaCode": "LIBE3",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "C": [12, 25, 36] } }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 8
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Lonicera",
+      "specificEpithet": "canadensis",
+      "commonNames": ["Fly Honeysuckle"],
+      "usdaCode": null,
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Lonicera",
+      "specificEpithet": "dioica",
+      "commonNames": ["Glaucous Honeysuckle", "Limber Honeysuckle"],
+      "usdaCode": "LODI2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Lonicera",
+      "specificEpithet": "villosa",
+      "commonNames": ["Mountain Fly Honeysuckle"],
+      "usdaCode": "LOVI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [11] } }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Lonicera",
+      "specificEpithet": "oblongifolia",
+      "commonNames": ["Swamp Fly Honeysuckle"],
+      "usdaCode": "LOOB",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Nemopanthus",
+      "specificEpithet": "mucronata",
+      "commonNames": ["Mountain Holly"],
+      "usdaCode": null,
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Physocarpus",
+      "specificEpithet": "opulifolius",
+      "commonNames": ["Common Ninebark"],
+      "usdaCode": "PHOP",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 9
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Potentilla",
+      "specificEpithet": "fruticosa",
+      "commonNames": ["Shrubby Cinquefoil"],
+      "usdaCode": "DAFR6",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Prunus",
+      "specificEpithet": "nigra",
+      "commonNames": ["Canadian Plum"],
+      "usdaCode": "PRNI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Prunus",
+      "specificEpithet": "virginiana",
+      "commonNames": ["Chokecherry"],
+      "usdaCode": "PRVI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Prunus",
+      "specificEpithet": "pensylvanica",
+      "commonNames": ["Pin Cherry"],
+      "usdaCode": "PRPE2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 30
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Prunus",
+      "specificEpithet": "pumila",
+      "commonNames": ["Sandcherry"],
+      "usdaCode": "PRPU3",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 6
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Prunus",
+      "specificEpithet": "americana",
+      "commonNames": ["Wild Plum", "American Plum"],
+      "usdaCode": "PRAM",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "R" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [35, 36, 38] } }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 25
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rhamnus",
+      "specificEpithet": "alnifolia",
+      "commonNames": ["Alder-leaved Buckthorn", "Alderleaved Buckthorn"],
+      "usdaCode": "RHAL",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rhus",
+      "specificEpithet": "aromatica",
+      "commonNames": ["Fragrant sumac"],
+      "usdaCode": "RHARS",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 6
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rhus",
+      "specificEpithet": "vernix",
+      "commonNames": ["Poison Sumac"],
+      "usdaCode": "TOVE",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [16, 35, 36] } }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rhus",
+      "specificEpithet": "glabra",
+      "commonNames": ["Smooth Sumac"],
+      "usdaCode": "RHGL",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rhus",
+      "specificEpithet": "typhina",
+      "commonNames": ["Staghorn Sumac"],
+      "usdaCode": "RHTY",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 15
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rosa",
+      "specificEpithet": "carolina",
+      "commonNames": ["Pasture Rose", "Carolina Rose"],
+      "usdaCode": "ROCA4",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "R" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [35, 36] } }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rosa",
+      "specificEpithet": "acicularis",
+      "commonNames": ["Prickly Wild Rose"],
+      "usdaCode": "ROAC",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rosa",
+      "specificEpithet": "blanda",
+      "commonNames": ["Smooth Wild Rose"],
+      "usdaCode": "ROBL",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 6
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rosa",
+      "specificEpithet": "palustris",
+      "commonNames": ["Swamp Rose"],
+      "usdaCode": "ROPA",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rosa",
+      "specificEpithet": "eglanteria",
+      "commonNames": ["Sweetbrier"],
+      "usdaCode": null,
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "serissima",
+      "commonNames": ["Autumn Willow"],
+      "usdaCode": "SASE2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "bebbiana",
+      "commonNames": ["Bebb's Willow", "Bebb Willow"],
+      "usdaCode": "SABE2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "nigra",
+      "commonNames": ["Black Willow"],
+      "usdaCode": "SANI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "myricoides",
+      "commonNames": ["Blue-leaved Willow", "Bayberry Willow"],
+      "usdaCode": "SAMY2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "R": [16] } }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "pedicellaris",
+      "commonNames": ["Bog Willow"],
+      "usdaCode": "SAPE2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "cordata",
+      "commonNames": ["Heart-leaved Willow", "Heartleaf Willow"],
+      "usdaCode": "SACO3",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "amygdaloides",
+      "commonNames": ["Peachleaf Willow"],
+      "usdaCode": "SAAM2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "discolor",
+      "commonNames": ["Pussy Willow"],
+      "usdaCode": "SADI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "candida",
+      "commonNames": ["Sage-leaved Willow", "Sageleaf Willow"],
+      "usdaCode": "SACA4",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "exigua",
+      "commonNames": ["Sandbar Willow", "Narrowleaf Willow"],
+      "usdaCode": "SAEX",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "lucida",
+      "commonNames": ["Shining Willow"],
+      "usdaCode": "SALU",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "petiolaris",
+      "commonNames": ["Slender Willow", "Meadow Willow"],
+      "usdaCode": "SAPE5",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "humilis",
+      "commonNames": ["Upland Willow", "Prairie Willow"],
+      "usdaCode": "SAHU2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Salix",
+      "specificEpithet": "eriocephala",
+      "commonNames": ["Willow", "Missouri River Willow"],
+      "usdaCode": "SAER",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Sambucus",
+      "specificEpithet": "canadensis",
+      "commonNames": ["American Elderberry"],
+      "usdaCode": "SANIC4",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 10
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Sambucus",
+      "specificEpithet": "racemosa",
+      "commonNames": ["Red Elderberry"],
+      "usdaCode": "SARAR3",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Shepherdia",
+      "specificEpithet": "canadensis",
+      "commonNames": ["Russet Buffalo Berry", "Russet Buffaloberry"],
+      "usdaCode": "SHCA",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Sorbus",
+      "specificEpithet": "americana",
+      "commonNames": ["American Mountain Ash"],
+      "usdaCode": "SOAM3",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Spiraea",
+      "specificEpithet": "latifolia",
+      "commonNames": ["Broad-leaved Meadowsweet"],
+      "usdaCode": "SPALL",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "U" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Spiraea",
+      "specificEpithet": "alba",
+      "commonNames": ["Narrow-leaved Meadowsweet", "White Meadowsweet"],
+      "usdaCode": "SPAL2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Spiraea",
+      "specificEpithet": "tomentosa",
+      "commonNames": ["Steeple-bush", "Steeplebush"],
+      "usdaCode": "SPTO2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "U" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Staphylea",
+      "specificEpithet": "trifolia",
+      "commonNames": ["American Bladdernut"],
+      "usdaCode": "STTR",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Symphoricarpos",
+      "specificEpithet": "albus",
+      "commonNames": ["Common Snowberry"],
+      "usdaCode": "SYAL",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Vaccinium",
+      "specificEpithet": "corymbosum",
+      "commonNames": ["High bush blueberry"],
+      "usdaCode": "VACO",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "U" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "U" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Viburnum",
+      "specificEpithet": "rafinesqueanum",
+      "commonNames": ["Downy Arrow-wood", "Downy Arrowwood"],
+      "usdaCode": "VIRA",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Viburnum",
+      "specificEpithet": "trilobum",
+      "commonNames": ["High-bush Cranberry"],
+      "usdaCode": "VIOPA2",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Viburnum",
+      "specificEpithet": "alnifolium",
+      "commonNames": ["Hobble-bush"],
+      "usdaCode": "VILA11",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Viburnum",
+      "specificEpithet": "lentago",
+      "commonNames": ["Nannyberry"],
+      "usdaCode": "VILE",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "hardinessZones": { "min": "2", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 15
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Zanthoxylum",
+      "specificEpithet": "americanum",
+      "commonNames": ["Prickly Ash"],
+      "usdaCode": null,
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "shrub",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Lonicera",
+      "specificEpithet": "hirsuta",
+      "commonNames": ["Hairy Honeysuckle"],
+      "usdaCode": "LOHI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "vine",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Parthenocissus",
+      "specificEpithet": "vitacea",
+      "commonNames": ["Virginia Creeper", "Woodbine"],
+      "usdaCode": "PAVI5",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "vine",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rhus",
+      "specificEpithet": "radicans",
+      "commonNames": ["Poison Ivy"],
+      "usdaCode": "TORAR",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "vine",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Vitis",
+      "specificEpithet": "riparia",
+      "commonNames": ["Riverbank Grape"],
+      "usdaCode": "VIRI",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "C" },
+          "ecoDistrict": { "code": "6E-7", "commonality": "C" }
+        }
+      ],
+      "growthHabit": "vine",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Vitis",
+      "specificEpithet": "aestivalis",
+      "commonNames": ["Summer Grape"],
+      "usdaCode": "VIAE",
+      "fgcaCommonality": [
+        {
+          "ecoRegion": { "code": "6E", "commonality": "R" },
+          "ecoDistrict": { "code": "6E-7", "commonality": { "U": [35, 36] } }
+        }
+      ],
+      "growthHabit": "vine",
+      "leafRetention": false,
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Allium",
+      "specificEpithet": "cernuum",
+      "commonNames": ["Nodding Onion"],
+      "usdaCode": "ALCE2",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "2", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 1.5
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Anaphalis",
+      "specificEpithet": "margaritacea",
+      "commonNames": ["Western Pearly Everlasting"],
+      "usdaCode": "ANMA",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "2", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Anemone",
+      "specificEpithet": "canadensis",
+      "commonNames": ["Canadian Anemone"],
+      "usdaCode": "ANCA8",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 1
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Aquilegia",
+      "specificEpithet": "canadensis",
+      "commonNames": ["Wild Columbine", "Canadian Columbine", "Eastern Red Columbine"],
+      "usdaCode": null,
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Asarum",
+      "specificEpithet": "canadense",
+      "commonNames": ["Wild Ginger"],
+      "usdaCode": "ASCA",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 0.5
+      },
+      "shadeTolerance": ["tolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Asclepias",
+      "specificEpithet": "incarnata",
+      "commonNames": ["Swamp Milkweed"],
+      "usdaCode": "ASIN",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Asclepias",
+      "specificEpithet": "syriaca",
+      "commonNames": ["Common Milkweed"],
+      "usdaCode": "ASSY",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Asclepias",
+      "specificEpithet": "tuberosa",
+      "commonNames": ["Butterfly Milkweek"],
+      "usdaCode": "ASTU",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Baptisia",
+      "specificEpithet": "australis",
+      "commonNames": ["Blue Wild Indigo"],
+      "usdaCode": "BAAUA",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Caltha",
+      "specificEpithet": "palustris",
+      "commonNames": ["Yellow Marsh Marigold"],
+      "usdaCode": "CAPA5",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 1
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Campanula",
+      "specificEpithet": "rotundifolia",
+      "commonNames": ["Harebell", "Bluebell Bellflower"],
+      "usdaCode": "CARO2",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 1
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Coreopsis",
+      "specificEpithet": "lanceolata",
+      "commonNames": ["Lanceleaf coreopsis", "Lanceleaf tickseen"],
+      "usdaCode": "COLA5",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 1.5
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Echinacea",
+      "specificEpithet": "purpurea",
+      "commonNames": ["Eastern Purple Coneflower"],
+      "usdaCode": "ECPU",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Eutrochium",
+      "specificEpithet": "maculatum",
+      "commonNames": ["Spotted Joe Pye Weed"],
+      "usdaCode": "EUMA9",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 7
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["clay loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Eutrochium",
+      "specificEpithet": "purpureum",
+      "commonNames": ["Sweet Joe Pye Weed"],
+      "usdaCode": "EUPU21",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 7
+      },
+      "shadeTolerance": ["intermediate"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Eurybia",
+      "specificEpithet": "macrophylla",
+      "commonNames": ["Large Leaved Aster", "Bigleaf Aster"],
+      "usdaCode": "EUMA27",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Fragaria",
+      "specificEpithet": "vesca",
+      "commonNames": ["Woodland Strawberry"],
+      "usdaCode": "FRVEA4",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "5", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 0.5
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Fragaria",
+      "specificEpithet": "virginiana",
+      "commonNames": ["Wild Strawberry", "Verginia Strawberry"],
+      "usdaCode": "FRVIG2",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "5", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 0.5
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Geranium",
+      "specificEpithet": "maculatum",
+      "commonNames": ["Wild Geranium", "Spotted Geranium"],
+      "usdaCode": "GEMA",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 1
+      },
+      "shadeTolerance": ["tolerant", "intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Geum",
+      "specificEpithet": "triflorum",
+      "commonNames": ["Prairie Smoke", "Old Man's Whiskers"],
+      "usdaCode": "GETR",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 0.5
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Gentiana",
+      "specificEpithet": "andrewsii",
+      "commonNames": ["Closed Bottle Gentian"],
+      "usdaCode": "GEAN",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Helianthus",
+      "specificEpithet": "divaricatus",
+      "commonNames": ["Woodland Sunflower"],
+      "usdaCode": "HEDI2",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 6
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Heliopsis",
+      "specificEpithet": "helianthoides",
+      "commonNames": ["Smooth Oxeye"],
+      "usdaCode": "HEHEH",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 5
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Hibiscus",
+      "specificEpithet": "moscheutos",
+      "commonNames": ["Rose Mallow", "Crimsoneyed Rosemallow"],
+      "usdaCode": "HIMO",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "5", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 7
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam", "clay loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Iris",
+      "specificEpithet": "versicolor",
+      "commonNames": ["Blue Flag Iris", "Harlequin Blueflag", "Northern Blueflag Iris"],
+      "usdaCode": "IRVE2",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Liatris",
+      "specificEpithet": "cylindracea",
+      "commonNames": ["Cylindrical Blazing Star", "Ontario Blazing Star"],
+      "usdaCode": "LICY",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 1
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Liatris",
+      "specificEpithet": "spicata",
+      "commonNames": ["Dense Blazing Star"],
+      "usdaCode": "LISP",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 5
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Lobelia",
+      "specificEpithet": "cardinalis",
+      "commonNames": ["Cardinal Flower"],
+      "usdaCode": "LOCA2",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Lobelia",
+      "specificEpithet": "siphilitica",
+      "commonNames": ["Great Blue Lobelia"],
+      "usdaCode": "LOSIL",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Lupinus",
+      "specificEpithet": "perennis",
+      "commonNames": ["Wild Lupine", "Sundial Lupine"],
+      "usdaCode": "LUPE3",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Maianthemum",
+      "specificEpithet": "racemosum",
+      "commonNames": ["False Solomon's Seal", "Feathery False Lily of the Valley"],
+      "usdaCode": "MARA7",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["wet"],
+      "soils": {
+        "granularity": [],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Mertensia",
+      "specificEpithet": "virginica",
+      "commonNames": ["Virginia Bluebells"],
+      "usdaCode": "MEVI3",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Monarda",
+      "specificEpithet": "didyma",
+      "commonNames": ["Scarlet Beebalm"],
+      "usdaCode": "MODI",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Monarda",
+      "specificEpithet": "fistulosa",
+      "commonNames": ["Wild Bergamot"],
+      "usdaCode": "MOFI",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Monarda",
+      "specificEpithet": "punctata",
+      "commonNames": ["Spotted Beebalm"],
+      "usdaCode": "MOPU",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Parnassia",
+      "specificEpithet": "glauca",
+      "commonNames": ["Fen Grass of Parnassus", "Bog Stars"],
+      "usdaCode": "PAGL3",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 1
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["wet"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Penstemon",
+      "specificEpithet": "digitalis",
+      "commonNames": ["Foxglove Beardtongue"],
+      "usdaCode": "PEDI",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Pycnanthemum",
+      "specificEpithet": "virginianum",
+      "commonNames": ["Mountain Mint", "Virginia Mountainmint"],
+      "usdaCode": "PYVI",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Ratibida",
+      "specificEpithet": "pinnata",
+      "commonNames": ["Yellow Coneflower", "Pinnate Prairie Cconeflower"],
+      "usdaCode": "RAPI",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 5
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rudbeckia",
+      "specificEpithet": "hirta",
+      "commonNames": ["Black-eyed Susan"],
+      "usdaCode": "RUHI2",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Sanguinaria",
+      "specificEpithet": "canadensis",
+      "commonNames": ["Bloodroot"],
+      "usdaCode": "SACA13",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 0.5
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": [],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Solidago",
+      "specificEpithet": "caesia",
+      "commonNames": ["Blue-stem Goldenrod", "Wreath Goldenrod"],
+      "usdaCode": "SOCA4",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Symphyotrichum",
+      "specificEpithet": "cordifoliumo",
+      "commonNames": ["Heart-leaved Aster", "Common Blue Wood Aster"],
+      "usdaCode": "SYCO4",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Symphyotrichum",
+      "specificEpithet": "laeve",
+      "commonNames": ["Smooth Blue Aster"],
+      "usdaCode": "SYLA3",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Symphyotrichum",
+      "specificEpithet": "novae-angliae",
+      "commonNames": ["New England Aster"],
+      "usdaCode": "SYNO2",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 5
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Verbena",
+      "specificEpithet": "simplex",
+      "commonNames": ["Narrow-leaved Vervain", "Narrowleaf Vervain"],
+      "usdaCode": "VESI",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry"],
+      "soils": {
+        "granularity": ["sandy loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Andropogon",
+      "specificEpithet": "gerardii",
+      "commonNames": ["Big Bluestem"],
+      "usdaCode": "ANGE",
+      "growthHabit": "graminoid",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 7
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Bouteloua",
+      "specificEpithet": "curtipendula",
+      "commonNames": ["Side Oats Grama"],
+      "usdaCode": "BOCU",
+      "growthHabit": "graminoid",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Elymus",
+      "specificEpithet": "hystrix",
+      "commonNames": ["Eastern Bottlebrush Grass"],
+      "usdaCode": "ELHY",
+      "growthHabit": "graminoid",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["tolerant", "intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Panicum",
+      "specificEpithet": "virgatum",
+      "commonNames": ["Switchgrass"],
+      "usdaCode": "PAVI2",
+      "growthHabit": "graminoid",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Schizachyrium",
+      "specificEpithet": "scoparium",
+      "commonNames": ["Little Bluestem"],
+      "usdaCode": "SCSC",
+      "growthHabit": "graminoid",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Sporobolus",
+      "specificEpithet": "heterolepis",
+      "commonNames": ["Prairie Dropseed"],
+      "usdaCode": "SPHE",
+      "growthHabit": "graminoid",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Sorghastrum",
+      "specificEpithet": "nutans",
+      "commonNames": ["Indian Grass"],
+      "usdaCode": "SONU2",
+      "growthHabit": "graminoid",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 6
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Carex",
+      "specificEpithet": "bebbii",
+      "commonNames": ["Bebb's Sedge"],
+      "usdaCode": "CABE2",
+      "growthHabit": "graminoid",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Carex",
+      "specificEpithet": "vulpinoidea",
+      "commonNames": ["Fox Sedge"],
+      "usdaCode": "CAVU2",
+      "growthHabit": "graminoid",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Athyrium",
+      "specificEpithet": "felix-femina",
+      "commonNames": ["Common Ladyfern"],
+      "usdaCode": "ATFI",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Cystopteris",
+      "specificEpithet": "bulbifera",
+      "commonNames": ["Berry Bladder", "Bulblet Bladderfern"],
+      "usdaCode": "CYBU3",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["tolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": [],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Dryopteris",
+      "specificEpithet": "marginalis",
+      "commonNames": ["Marginal Wood Fern"],
+      "usdaCode": "DRMA4",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Onoclea",
+      "specificEpithet": "sensibilis",
+      "commonNames": ["Sensitive Fern"],
+      "usdaCode": "ONSE",
+      "growthHabit": "forb",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": [],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Asimina",
+      "specificEpithet": "triloba",
+      "commonNames": ["Paw Paw"],
+      "usdaCode": "ASTR",
+      "growthHabit": "tree",
+      "hardinessZones": { "min": "5", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 25
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Betula",
+      "specificEpithet": "lenta",
+      "commonNames": ["Cherry Birch", "Sweet Birch"],
+      "usdaCode": "BELE",
+      "growthHabit": "tree",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 50
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Cercis",
+      "specificEpithet": "canadensis",
+      "commonNames": ["Eastern Redbud"],
+      "usdaCode": "CECA4",
+      "growthHabit": "tree",
+      "hardinessZones": { "min": "5", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 30
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Cornus",
+      "specificEpithet": "florida",
+      "commonNames": ["Flowering Dogwood"],
+      "usdaCode": "COFL2",
+      "growthHabit": "tree",
+      "hardinessZones": { "min": "5", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 20
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Gymnocladus",
+      "specificEpithet": "dioicus",
+      "commonNames": ["Kentucky Coffee Tree"],
+      "usdaCode": null,
+      "growthHabit": "tree",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 80
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Liriodendron",
+      "specificEpithet": "tulipifera",
+      "commonNames": ["Tulip Tree"],
+      "usdaCode": "LITU",
+      "growthHabit": "tree",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 100
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Nyssa",
+      "specificEpithet": "sylvatica",
+      "commonNames": ["Black gum"],
+      "usdaCode": "NYSY",
+      "growthHabit": "tree",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 50
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Ptelea",
+      "specificEpithet": "trifoliata",
+      "commonNames": ["Hop Tree", "Common HopTree"],
+      "usdaCode": "PTTR",
+      "growthHabit": "tree",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 20
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Quercus",
+      "specificEpithet": "ellipsoidalis",
+      "commonNames": ["Hill's Oak", "Norther Pin Oak"],
+      "usdaCode": "QUEL",
+      "growthHabit": "tree",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 70
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Amelanchier",
+      "specificEpithet": "canadensis",
+      "commonNames": ["Canadian Serviceberry"],
+      "usdaCode": null,
+      "growthHabit": "shrub",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 30
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Ceanothus",
+      "specificEpithet": "americanus",
+      "commonNames": ["New Jersey Tea"],
+      "usdaCode": "CEAM",
+      "growthHabit": "shrub",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Hypericum",
+      "specificEpithet": "kalmianum",
+      "commonNames": ["Pot of Gold", "Kalm's St. Johnswort"],
+      "usdaCode": "HYKA",
+      "growthHabit": "shrub",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 3
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Hypericum",
+      "specificEpithet": "prolificum",
+      "commonNames": ["Shrubby St. Johnswort"],
+      "usdaCode": "HYPR",
+      "growthHabit": "shrub",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 5
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Myrica",
+      "specificEpithet": "gale",
+      "commonNames": ["Sweetgale"],
+      "usdaCode": "MYGA",
+      "growthHabit": "shrub",
+      "hardinessZones": { "min": "2", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 4
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rubus",
+      "specificEpithet": "idaeus",
+      "commonNames": ["American Red Raspberry"],
+      "usdaCode": "RUID",
+      "growthHabit": "shrub",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 5
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rubus",
+      "specificEpithet": "occidentalis",
+      "commonNames": ["Black Raspberry"],
+      "usdaCode": "RUOC",
+      "growthHabit": "shrub",
+      "hardinessZones": { "min": "4", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 6
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Rubus",
+      "specificEpithet": "odoratus",
+      "commonNames": ["Purple Flowering Raspberry"],
+      "usdaCode": "RUOD",
+      "growthHabit": "shrub",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 6
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Vaccinium",
+      "specificEpithet": "angustifolium",
+      "commonNames": ["Lowbush Blueberry"],
+      "usdaCode": "VAAN",
+      "growthHabit": "shrub",
+      "hardinessZones": { "min": "3", "max": "7" },
+      "matureSize": {
+        "unit": "ft",
+        "height": 2
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Maianthemum",
+      "specificEpithet": "stellatum",
+      "commonNames": ["Starry False Lily of the Valley", "Starry Solomon's Seal"],
+      "usdaCode": "MAST4",
+      "growthHabit": "forb",
+      "leafRetention": false,
+      "matureSize": {
+        "unit": "m",
+        "height": 0.5
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["dry", "medium"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": ["https://fgca.net/"],
+      "editHistory": [
+        { "time": "2021-04-18T18:25:53-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Solidago",
+      "specificEpithet": "flexicaulis",
+      "commonNames": ["Zigzag Goldenrod"],
+      "usdaCode": "SOFL2",
+      "growthHabit": "forb",
+      "matureSize": {
+        "unit": "m",
+        "height": 0.8
+      },
+      "shadeTolerance": ["tolerant", "intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Tiarella",
+      "specificEpithet": "cordifolia",
+      "commonNames": ["Heartleaf Foamflower"],
+      "usdaCode": "TICO",
+      "growthHabit": "forb",
+      "matureSize": {
+        "unit": "m",
+        "height": 0.25
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["loam", "clay loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Hydrophyllum",
+      "specificEpithet": "virginianum",
+      "commonNames": ["Eastern Waterleaf"],
+      "usdaCode": "HYVI",
+      "growthHabit": "forb",
+      "matureSize": {
+        "unit": "m",
+        "height": 0.5
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["wet"],
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Euonymus",
+      "specificEpithet": "obovatus",
+      "commonNames": ["Running Euonymus", "Running Strawberry Bush"],
+      "usdaCode": "EUOB8",
+      "growthHabit": "shrub",
+      "matureSize": {
+        "unit": "m",
+        "height": 0.5
+      },
+      "shadeTolerance": ["intermediate"],
+      "moisture": ["wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": true
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Podophyllum",
+      "specificEpithet": "peltatum",
+      "commonNames": ["Mayapple"],
+      "usdaCode": "POPE",
+      "growthHabit": "forb",
+      "matureSize": {
+        "unit": "m",
+        "height": 0.4
+      },
+      "shadeTolerance": ["intermediate"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Lilium",
+      "specificEpithet": "michiganense",
+      "commonNames": ["Michigan Lily"],
+      "usdaCode": "LIMI9",
+      "growthHabit": "forb",
+      "matureSize": {
+        "unit": "m",
+        "height": 1
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Echinacea",
+      "specificEpithet": "pallida",
+      "commonNames": ["Pale Purple Coneflower"],
+      "usdaCode": "ECPA",
+      "growthHabit": "forb",
+      "matureSize": {
+        "unit": "m",
+        "height": 1.2
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["dry", "medium"],
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Carex",
+      "specificEpithet": "pensylvanica",
+      "commonNames": ["Pennsylvania Sedge"],
+      "usdaCode": "CAPE6",
+      "growthHabit": "graminoid",
+      "matureSize": {
+        "unit": "m",
+        "height": 0.3
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["dry", "medium"],
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Carex",
+      "specificEpithet": "eburnea",
+      "commonNames": ["Ivory Sedge", "Bristleleaf Sedge"],
+      "usdaCode": "CAEB2",
+      "growthHabit": "graminoid",
+      "matureSize": {
+        "unit": "m",
+        "height": 0.3
+      },
+      "shadeTolerance": ["tolerant", "intermediate"],
+      "moisture": ["dry", "medium"],
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Gleditsia",
+      "specificEpithet": "triacanthos",
+      "commonNames": ["honeylocust"],
+      "usdaCode": "GLTR",
+      "growthHabit": "tree",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Elaeagnus",
+      "specificEpithet": "commutata",
+      "commonNames": ["Silverberry"],
+      "usdaCode": "ELCO",
+      "growthHabit": "shrub",
+      "matureSize": {
+        "unit": "m",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium"],
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Ribes",
+      "specificEpithet": "americanum",
+      "commonNames": ["Wild Black Currant", "American Black Currant"],
+      "usdaCode": "RIAM2",
+      "growthHabit": "shrub",
+      "matureSize": {
+        "unit": "m",
+        "height": 2
+      },
+      "shadeTolerance": ["tolerant", "intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Morella",
+      "specificEpithet": "pensylvanica",
+      "commonNames": ["Northern Bayberry"],
+      "usdaCode": "MOPE6",
+      "growthHabit": "shrub",
+      "matureSize": {
+        "unit": "m",
+        "height": 3
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["dry", "medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Hydrangea",
+      "specificEpithet": "petiolaris",
+      "commonNames": ["Climbing Hydrangea"],
+      "usdaCode": null,
+      "growthHabit": "vine",
+      "matureSize": {
+        "unit": "m",
+        "height": 12
+      },
+      "shadeTolerance": ["tolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Aristolochia",
+      "specificEpithet": "macrophylla",
+      "commonNames": ["Pipevine", "Dutchman’s Pipe"],
+      "usdaCode": "ARMA7",
+      "growthHabit": "vine",
+      "matureSize": {
+        "unit": "m",
+        "height": 9
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Clematis",
+      "specificEpithet": "virginiana",
+      "commonNames": ["Devil's Darning Needles", "Virgin’s Bower"],
+      "usdaCode": "CLVI5",
+      "growthHabit": "vine",
+      "matureSize": {
+        "unit": "m",
+        "height": 5
+      },
+      "shadeTolerance": ["tolerant", "intermediate", "intolerant"],
+      "moisture": ["dry", "medium", "wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Chelone",
+      "specificEpithet": "glabra",
+      "commonNames": ["White Turtlehead"],
+      "usdaCode": "CHGL2",
+      "growthHabit": "forb",
+      "matureSize": {
+        "unit": "m",
+        "height": 0.9
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Verbena",
+      "specificEpithet": "hastata",
+      "commonNames": ["Swamp Verbena", "Blue Vervain"],
+      "usdaCode": "VEHA2",
+      "growthHabit": "forb",
+      "matureSize": {
+        "unit": "m",
+        "height": 1.8
+      },
+      "shadeTolerance": ["tolerant"],
+      "moisture": ["medium", "wet"],
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Eupatorium",
+      "specificEpithet": "perfoliatum",
+      "commonNames": ["Common Boneset"],
+      "usdaCode": "EUPE3",
+      "growthHabit": "forb",
+      "matureSize": {
+        "unit": "m",
+        "height": 1
+      },
+      "shadeTolerance": ["intermediate", "intolerant"],
+      "moisture": ["medium", "wet"],
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Pontederia",
+      "specificEpithet": "cordata",
+      "commonNames": ["Pickerelweed"],
+      "usdaCode": "POCO14",
+      "growthHabit": "forb",
+      "matureSize": {
+        "unit": "m",
+        "height": 0.6
+      },
+      "shadeTolerance": ["tolerant", "intermediate", "intolerant"],
+      "moisture": ["wet"],
+      "soils": {
+        "granularity": ["sandy loam", "loam", "clay loam"],
+        "organic": false
+      },
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Hippuris",
+      "specificEpithet": "vulgaris",
+      "commonNames": ["Common Mare's Tail"],
+      "usdaCode": "HIVU2",
+      "growthHabit": "forb",
+      "matureSize": {
+        "unit": "m",
+        "height": 0.5
+      },
+      "shadeTolerance": ["intolerant"],
+      "moisture": ["wet"],
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Sagittaria",
+      "specificEpithet": "latifolia",
+      "commonNames": ["Broadleaf Arrowhead"],
+      "usdaCode": "SALA2",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Zizia",
+      "specificEpithet": "aurea",
+      "commonNames": ["Golden Zizia"],
+      "usdaCode": "ZIAU",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Eleocharis",
+      "specificEpithet": "acicularis",
+      "commonNames": ["Needle Spikerush", "Dwarf Hairgrass"],
+      "usdaCode": "ELAC",
+      "growthHabit": "graminoid",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Penstemon",
+      "specificEpithet": "hirsutus",
+      "commonNames": ["Hairy Beardtongue"],
+      "usdaCode": "PEHI",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Antennaria",
+      "specificEpithet": "neglecta",
+      "commonNames": ["Field Pussytoes"],
+      "usdaCode": "ANNE",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Agastache",
+      "specificEpithet": "nepetoides",
+      "commonNames": ["Yellow Giant Hyssop"],
+      "usdaCode": "AGNE2",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Agastache",
+      "specificEpithet": "foeniculum",
+      "commonNames": ["Blue Giant Hyssop", "Anise Hyssop"],
+      "usdaCode": "AGFO",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Coreopsis",
+      "specificEpithet": "tripteris",
+      "commonNames": ["Tall Tickseed"],
+      "usdaCode": "COTR4",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Verbena",
+      "specificEpithet": "stricta",
+      "commonNames": ["Hoary Vervain", "Hoary Verbean"],
+      "usdaCode": "VEST",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Verbena",
+      "specificEpithet": "stricta",
+      "commonNames": ["Hoary Vervain", "Hoary Verbean"],
+      "usdaCode": "VEST",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Verbena",
+      "specificEpithet": "stricta",
+      "commonNames": ["Hoary Vervain", "Hoary Verbean"],
+      "usdaCode": "VEST",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Solidago",
+      "specificEpithet": "juncea",
+      "commonNames": ["Early Goldenrod"],
+      "usdaCode": "SOJU",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Actaea",
+      "specificEpithet": "racemosa",
+      "commonNames": ["Black Cohosh", "Black Baneberry"],
+      "usdaCode": "ACRA7",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Actaea",
+      "specificEpithet": "rubra",
+      "commonNames": ["Red Baneberry"],
+      "usdaCode": "ACRU2",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Thalictrum",
+      "specificEpithet": "dioicum",
+      "commonNames": ["Early Meadow Rue"],
+      "usdaCode": "THDI",
+      "growthHabit": "forb",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Deschampsia",
+      "specificEpithet": "cespitosa",
+      "commonNames": ["Tufted Hairgrass"],
+      "usdaCode": "DECE",
+      "growthHabit": "graminoid",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    },
+    {
+      "genus": "Carex",
+      "specificEpithet": "plantaginea",
+      "commonNames": ["Plantainleaf Sedge"],
+      "usdaCode": "CAPL4",
+      "growthHabit": "graminoid",
+      "media": {
+        "images": []
+      },
+      "relatedContent": [],
+      "sources": [],
+      "editHistory": [
+        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
+      ]
+    }
+  ]
+}
