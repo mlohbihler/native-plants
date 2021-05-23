@@ -28,7 +28,7 @@ import { defineComponent } from 'vue'
 import importedPlants from '../data/plants.json'
 import { diceCoefficient as stringComparator } from 'string-comparison'
 import ToggleSet from '@/components/ToggleSet.vue'
-import { PlantDatabase, Plant } from '@/types/plants'
+import { PlantDatabase, Plant } from '@/@types/string-comparison/plants'
 
 const plantsDatabase = importedPlants as PlantDatabase
 const MIN_RANKING = 0.1
