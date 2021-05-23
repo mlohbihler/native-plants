@@ -24,7 +24,7 @@ export default defineComponent({
 .toggle {
   background-color: rgba(255, 255, 255, 0.9);
   border: 2px solid rgba(139, 139, 139, 0.3);
-  color: #adadad;
+  color: #666;
   border-radius: 5px;
   white-space: nowrap;
   transition: all 0.2s;

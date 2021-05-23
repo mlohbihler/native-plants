@@ -1,47 +1,19 @@
 {
   "version": "0.0.1",
   "metadata": {
-    "genus": {
-      "description": "Genus-specific part of the scientific name",
-      "type": "string",
-      "required": true
-    },
-    "specificEpithet": {
-      "description": "Specific epithet of the scientific name",
-      "type": "string",
-      "required": true
-    },
-    "commonNames": {
-      "description": "Common names",
-      "type": "array<string>"
-    },
-    "hardinessZones": {
-      "description": "Hardiness zones",
-      "type": "min, max"
-    },
-    "naturalLocations": {
-      "description": "Where this plant is known to grow naturally",
-      "type": "array<string>"
-    },
-    "duration": {
-      "description": "Lifetime of plant",
-      "type": "enum",
-      "values": ["Annual", "Biennial", "Perennial"]
-    },
-    "growthHabit": {
-      "description": "Growth habit",
-      "type": "enum",
-      "values": ["forb", "graminoid", "lichenous", "nonvascular", "shrub", "subshrub", "tree", "vine"]
-    },
-    "leafRetention": {
-      "description": "Evergreen or deciduous",
-      "type": "boolean"
-    }
+    "genus": "Genus-specific part of the scientific name",
+    "species": "Species-specific part of the scientific name",
+    "commonNames": "Common names",
+    "hardinessZones": "Hardiness zones",
+    "naturalLocations": "Where this plant is known to grow naturally",
+    "duration": "Lifetime of plant",
+    "growthHabit": "Growth habit",
+    "leafRetention": "Evergreen or deciduous"
   },
   "plants": [
     {
       "genus": "Abies",
-      "specificEpithet": "balsamea",
+      "species": "balsamea",
       "commonNames": ["Balsam Fir"],
       "usdaCode": "ABBAP",
       "fgcaCommonality": [
@@ -63,12 +35,12 @@
     },
     {
       "genus": "Juniperus",
-      "specificEpithet": "virginiana",
+      "species": "virginiana",
       "commonNames": ["Eastern Red Cedar"],
       "usdaCode": "JUVI",
       "fgcaCommonality": [
         {
-          "ecoRegion": { "code": "6E", "commonality": "D" },
+          "ecoRegion": { "code": "6E", "commonality": "C" },
           "ecoDistrict": { "code": "6E-7", "commonality": { "U": [12, 17, 38] } }
         }
       ],
@@ -96,7 +68,7 @@
     },
     {
       "genus": "Picea",
-      "specificEpithet": "mariana",
+      "species": "mariana",
       "commonNames": ["Black Spruce"],
       "usdaCode": "PIMA",
       "fgcaCommonality": [
@@ -118,7 +90,7 @@
     },
     {
       "genus": "Picea",
-      "specificEpithet": "glauca",
+      "species": "glauca",
       "commonNames": ["White Spruce"],
       "usdaCode": "PIGL",
       "fgcaCommonality": [
@@ -140,7 +112,7 @@
     },
     {
       "genus": "Pinus",
-      "specificEpithet": "resinosa",
+      "species": "resinosa",
       "commonNames": ["Red Pine"],
       "usdaCode": "PIRE",
       "fgcaCommonality": [
@@ -162,7 +134,7 @@
     },
     {
       "genus": "Thuja",
-      "specificEpithet": "occidentalis",
+      "species": "occidentalis",
       "commonNames": ["Eastern White Cedar"],
       "usdaCode": "THOC2",
       "fgcaCommonality": [
@@ -195,7 +167,7 @@
     },
     {
       "genus": "Tsuga",
-      "specificEpithet": "canadensis",
+      "species": "canadensis",
       "commonNames": ["Eastern Hemlock"],
       "usdaCode": "TSCA",
       "fgcaCommonality": [
@@ -228,7 +200,7 @@
     },
     {
       "genus": "Acer",
-      "specificEpithet": "saccharum spp nigrum",
+      "species": "saccharum spp nigrum",
       "commonNames": ["Black Maple"],
       "usdaCode": "ACNI5",
       "fgcaCommonality": [
@@ -250,7 +222,7 @@
     },
     {
       "genus": "Acer",
-      "specificEpithet": "rubrum",
+      "species": "rubrum",
       "commonNames": ["Red Maple"],
       "usdaCode": "ACRU",
       "fgcaCommonality": [
@@ -283,7 +255,7 @@
     },
     {
       "genus": "Acer",
-      "specificEpithet": "saccharinum",
+      "species": "saccharinum",
       "commonNames": ["Silver Maple"],
       "usdaCode": "ACSA2",
       "fgcaCommonality": [
@@ -305,7 +277,7 @@
     },
     {
       "genus": "Acer",
-      "specificEpithet": "saccharum",
+      "species": "saccharum",
       "commonNames": ["Sugar Maple"],
       "usdaCode": "ACSA3",
       "fgcaCommonality": [
@@ -338,7 +310,7 @@
     },
     {
       "genus": "Betula",
-      "specificEpithet": "papyrifera",
+      "species": "papyrifera",
       "commonNames": ["White Birch", "Paper Birch"],
       "usdaCode": "BEPA",
       "fgcaCommonality": [
@@ -371,7 +343,7 @@
     },
     {
       "genus": "Betula",
-      "specificEpithet": "allegheniensis",
+      "species": "allegheniensis",
       "commonNames": ["Yellow Birch"],
       "usdaCode": "BEAL2",
       "fgcaCommonality": [
@@ -393,7 +365,7 @@
     },
     {
       "genus": "Carpinus",
-      "specificEpithet": "caroliniana",
+      "species": "caroliniana",
       "commonNames": ["Blue Beech", "American Hornbeam"],
       "usdaCode": "CACA18",
       "fgcaCommonality": [
@@ -426,7 +398,7 @@
     },
     {
       "genus": "Carya",
-      "specificEpithet": "cordiformis",
+      "species": "cordiformis",
       "commonNames": ["Bitternut Hickory"],
       "usdaCode": "CACO15",
       "fgcaCommonality": [
@@ -448,7 +420,7 @@
     },
     {
       "genus": "Carya",
-      "specificEpithet": "ovata",
+      "species": "ovata",
       "commonNames": ["Shagbark Hickory"],
       "usdaCode": "CAOV2",
       "fgcaCommonality": [
@@ -481,7 +453,7 @@
     },
     {
       "genus": "Celtis",
-      "specificEpithet": "occidentalis",
+      "species": "occidentalis",
       "commonNames": ["Hackberry"],
       "usdaCode": "CEOC",
       "fgcaCommonality": [
@@ -503,7 +475,7 @@
     },
     {
       "genus": "Crataegus",
-      "specificEpithet": "punctata",
+      "species": "punctata",
       "commonNames": ["Dotted Hawthorn"],
       "usdaCode": "CRPU",
       "fgcaCommonality": [
@@ -525,7 +497,7 @@
     },
     {
       "genus": "Fagus",
-      "specificEpithet": "grandifolia",
+      "species": "grandifolia",
       "commonNames": ["American Beech"],
       "usdaCode": "FAGR",
       "fgcaCommonality": [
@@ -547,7 +519,7 @@
     },
     {
       "genus": "Fraxinus",
-      "specificEpithet": "nigra",
+      "species": "nigra",
       "commonNames": ["Black Ash"],
       "usdaCode": "FRNI",
       "fgcaCommonality": [
@@ -569,7 +541,7 @@
     },
     {
       "genus": "Fraxinus",
-      "specificEpithet": "pennsylvanica",
+      "species": "pennsylvanica",
       "commonNames": ["Red Ash", "Green Ash"],
       "usdaCode": "FRPE",
       "fgcaCommonality": [
@@ -591,7 +563,7 @@
     },
     {
       "genus": "Fraxinus",
-      "specificEpithet": "americana",
+      "species": "americana",
       "commonNames": ["White Ash"],
       "usdaCode": "FRAM2",
       "fgcaCommonality": [
@@ -613,7 +585,7 @@
     },
     {
       "genus": "Juglans",
-      "specificEpithet": "nigra",
+      "species": "nigra",
       "commonNames": ["Black Walnut"],
       "usdaCode": "JUNI",
       "fgcaCommonality": [
@@ -635,7 +607,7 @@
     },
     {
       "genus": "Juglans",
-      "specificEpithet": "cinerea",
+      "species": "cinerea",
       "commonNames": ["Butternut"],
       "usdaCode": "JUCI",
       "fgcaCommonality": [
@@ -657,7 +629,7 @@
     },
     {
       "genus": "Larix",
-      "specificEpithet": "laricina",
+      "species": "laricina",
       "commonNames": ["Tamarack"],
       "usdaCode": "LALA",
       "fgcaCommonality": [
@@ -690,7 +662,7 @@
     },
     {
       "genus": "Ostrya",
-      "specificEpithet": "virginiana",
+      "species": "virginiana",
       "commonNames": ["Ironwood", "Hophornbeam"],
       "usdaCode": "OSVI",
       "fgcaCommonality": [
@@ -712,7 +684,7 @@
     },
     {
       "genus": "Platanus",
-      "specificEpithet": "occidentalis",
+      "species": "occidentalis",
       "commonNames": ["Sycamore", "American Sycamore"],
       "usdaCode": "PLOC",
       "fgcaCommonality": [
@@ -734,7 +706,7 @@
     },
     {
       "genus": "Populus",
-      "specificEpithet": "balsamifera",
+      "species": "balsamifera",
       "commonNames": ["Balsam Poplar"],
       "usdaCode": "POBA2",
       "fgcaCommonality": [
@@ -756,7 +728,7 @@
     },
     {
       "genus": "Populus",
-      "specificEpithet": "deltoides",
+      "species": "deltoides",
       "commonNames": ["Eastern Cottonwood"],
       "usdaCode": "PODED",
       "fgcaCommonality": [
@@ -778,7 +750,7 @@
     },
     {
       "genus": "Populus",
-      "specificEpithet": "grandidentata",
+      "species": "grandidentata",
       "commonNames": ["Largetooth Aspen", "Bigtooth Aspen"],
       "usdaCode": "POGR4",
       "fgcaCommonality": [
@@ -800,7 +772,7 @@
     },
     {
       "genus": "Populus",
-      "specificEpithet": "tremuloides",
+      "species": "tremuloides",
       "commonNames": ["Trembling Aspen", "Quaking Aspen"],
       "usdaCode": "POTR5",
       "fgcaCommonality": [
@@ -822,7 +794,7 @@
     },
     {
       "genus": "Prunus",
-      "specificEpithet": "serotina",
+      "species": "serotina",
       "commonNames": ["Black Cherry"],
       "usdaCode": "PRSE2",
       "fgcaCommonality": [
@@ -844,7 +816,7 @@
     },
     {
       "genus": "Quercus",
-      "specificEpithet": "velutina",
+      "species": "velutina",
       "commonNames": ["Black Oak"],
       "usdaCode": "QUVE",
       "fgcaCommonality": [
@@ -866,7 +838,7 @@
     },
     {
       "genus": "Quercus",
-      "specificEpithet": "macrocarpa",
+      "species": "macrocarpa",
       "commonNames": ["Bur Oak"],
       "usdaCode": "QUMA2",
       "fgcaCommonality": [
@@ -899,7 +871,7 @@
     },
     {
       "genus": "Quercus",
-      "specificEpithet": "rubra",
+      "species": "rubra",
       "commonNames": ["Red Oak"],
       "usdaCode": "QURU",
       "fgcaCommonality": [
@@ -932,7 +904,7 @@
     },
     {
       "genus": "Quercus",
-      "specificEpithet": "bicolor",
+      "species": "bicolor",
       "commonNames": ["Swamp White Oak"],
       "usdaCode": "QUBI",
       "fgcaCommonality": [
@@ -954,7 +926,7 @@
     },
     {
       "genus": "Quercus",
-      "specificEpithet": "alba",
+      "species": "alba",
       "commonNames": ["White Oak"],
       "usdaCode": "QUAL",
       "fgcaCommonality": [
@@ -976,7 +948,7 @@
     },
     {
       "genus": "Sassafras",
-      "specificEpithet": "albidum",
+      "species": "albidum",
       "commonNames": ["Sassafras"],
       "usdaCode": "SAAL5",
       "fgcaCommonality": [
@@ -998,7 +970,7 @@
     },
     {
       "genus": "Tilia",
-      "specificEpithet": "americana",
+      "species": "americana",
       "commonNames": ["Basswood", "American Basswood"],
       "usdaCode": "TIAM",
       "fgcaCommonality": [
@@ -1020,7 +992,7 @@
     },
     {
       "genus": "Ulmus",
-      "specificEpithet": "thomasii",
+      "species": "thomasii",
       "commonNames": ["Rock Elm"],
       "usdaCode": "ULTH",
       "fgcaCommonality": [
@@ -1042,7 +1014,7 @@
     },
     {
       "genus": "Ulmus",
-      "specificEpithet": "rubra",
+      "species": "rubra",
       "commonNames": ["Slippery (Red) Elm"],
       "usdaCode": "ULRU",
       "fgcaCommonality": [
@@ -1064,7 +1036,7 @@
     },
     {
       "genus": "Ulmus",
-      "specificEpithet": "americana",
+      "species": "americana",
       "commonNames": ["White Elm", "American Elm"],
       "usdaCode": "ULAM",
       "fgcaCommonality": [
@@ -1086,7 +1058,7 @@
     },
     {
       "genus": "Juniperus",
-      "specificEpithet": "communis",
+      "species": "communis",
       "commonNames": ["Common Juniper"],
       "usdaCode": "JUCOD",
       "fgcaCommonality": [
@@ -1108,7 +1080,7 @@
     },
     {
       "genus": "Juniperus",
-      "specificEpithet": "horizontalis",
+      "species": "horizontalis",
       "commonNames": ["Creeping Juniper"],
       "usdaCode": "JUHO2",
       "fgcaCommonality": [
@@ -1130,7 +1102,7 @@
     },
     {
       "genus": "Taxus",
-      "specificEpithet": "canadensis",
+      "species": "canadensis",
       "commonNames": ["American Yew", "Canada Yew"],
       "usdaCode": "TACA7",
       "fgcaCommonality": [
@@ -1152,7 +1124,7 @@
     },
     {
       "genus": "Acer",
-      "specificEpithet": "spicatum",
+      "species": "spicatum",
       "commonNames": ["Mountain Maple"],
       "usdaCode": "ACSP2",
       "fgcaCommonality": [
@@ -1174,7 +1146,7 @@
     },
     {
       "genus": "Acer",
-      "specificEpithet": "pennsylvanicum",
+      "species": "pennsylvanicum",
       "commonNames": ["Striped Maple"],
       "usdaCode": "ACPE",
       "fgcaCommonality": [
@@ -1196,7 +1168,7 @@
     },
     {
       "genus": "Alnus",
-      "specificEpithet": "incana",
+      "species": "incana",
       "commonNames": ["Speckled Alder"],
       "usdaCode": "ALINR",
       "fgcaCommonality": [
@@ -1218,7 +1190,7 @@
     },
     {
       "genus": "Amelanchier",
-      "specificEpithet": "sanguinea",
+      "species": "sanguinea",
       "commonNames": ["Roundleaf Serviceberry"],
       "usdaCode": "AMSA",
       "fgcaCommonality": [
@@ -1240,7 +1212,7 @@
     },
     {
       "genus": "Amelanchier",
-      "specificEpithet": "arborea",
+      "species": "arborea",
       "commonNames": ["Common Serviceberry"],
       "usdaCode": "AMAR3",
       "fgcaCommonality": [
@@ -1262,7 +1234,7 @@
     },
     {
       "genus": "Amelanchier",
-      "specificEpithet": "bartramiana",
+      "species": "bartramiana",
       "commonNames": ["Oblongfruit Serviceberry"],
       "usdaCode": "AMBA",
       "fgcaCommonality": [
@@ -1284,7 +1256,7 @@
     },
     {
       "genus": "Amelanchier",
-      "specificEpithet": "laevis",
+      "species": "laevis",
       "commonNames": ["Allegheny Serviceberry"],
       "usdaCode": "AMLA",
       "fgcaCommonality": [
@@ -1306,7 +1278,7 @@
     },
     {
       "genus": "Amelanchier",
-      "specificEpithet": "stolonifera",
+      "species": "stolonifera",
       "commonNames": ["Running Serviceberry"],
       "usdaCode": "AMST80",
       "fgcaCommonality": [
@@ -1328,7 +1300,7 @@
     },
     {
       "genus": "Amelanchier",
-      "specificEpithet": "humilis",
+      "species": "humilis",
       "commonNames": ["Low Serviceberry"],
       "usdaCode": "AMHU2",
       "fgcaCommonality": [
@@ -1350,9 +1322,8 @@
     },
     {
       "genus": "Aronia",
-      "specificEpithet": "melanocarpa",
+      "species": "melanocarpa",
       "commonNames": ["Chokeberry"],
-      "usdaCode": null,
       "fgcaCommonality": [
         {
           "ecoRegion": { "code": "6E", "commonality": "C" },
@@ -1383,7 +1354,7 @@
     },
     {
       "genus": "Betula",
-      "specificEpithet": "pumila var. glandulifera",
+      "species": "pumila var. glandulifera",
       "commonNames": ["Dwarf Birch", "Bog Birch"],
       "usdaCode": "BEPUG",
       "fgcaCommonality": [
@@ -1405,7 +1376,7 @@
     },
     {
       "genus": "Cephalanthus",
-      "specificEpithet": "occidentalis",
+      "species": "occidentalis",
       "commonNames": ["Common Buttonbush"],
       "usdaCode": "CEOC2",
       "fgcaCommonality": [
@@ -1438,7 +1409,7 @@
     },
     {
       "genus": "Chamaedaphne",
-      "specificEpithet": "calyculata",
+      "species": "calyculata",
       "commonNames": ["Leatherleaf"],
       "usdaCode": "CHCA2",
       "fgcaCommonality": [
@@ -1460,7 +1431,7 @@
     },
     {
       "genus": "Cornus",
-      "specificEpithet": "alternifolia",
+      "species": "alternifolia",
       "commonNames": ["Alternate-leaf Dogwood", "Pagoda Dogwood"],
       "usdaCode": "COAL2",
       "fgcaCommonality": [
@@ -1493,7 +1464,7 @@
     },
     {
       "genus": "Cornus",
-      "specificEpithet": "racemosa",
+      "species": "racemosa",
       "commonNames": ["Gray Dogwood"],
       "usdaCode": "CORA6",
       "fgcaCommonality": [
@@ -1515,9 +1486,8 @@
     },
     {
       "genus": "Cornus",
-      "specificEpithet": "stolonifera",
+      "species": "stolonifera",
       "commonNames": ["Red-osier Dogwood"],
-      "usdaCode": null,
       "fgcaCommonality": [
         {
           "ecoRegion": { "code": "6E", "commonality": "C" },
@@ -1537,7 +1507,7 @@
     },
     {
       "genus": "Cornus",
-      "specificEpithet": "rugosa",
+      "species": "rugosa",
       "commonNames": ["Round-leaved Dogwood", "Roundleaf Dogwood"],
       "usdaCode": "CORU",
       "fgcaCommonality": [
@@ -1559,7 +1529,7 @@
     },
     {
       "genus": "Cornus",
-      "specificEpithet": "amomum",
+      "species": "amomum",
       "commonNames": ["Silky Dogwood"],
       "usdaCode": "COAM2",
       "fgcaCommonality": [
@@ -1581,7 +1551,7 @@
     },
     {
       "genus": "Corylus",
-      "specificEpithet": "cornuta",
+      "species": "cornuta",
       "commonNames": ["Beaked Hazel"],
       "usdaCode": "COCOC2",
       "fgcaCommonality": [
@@ -1603,7 +1573,7 @@
     },
     {
       "genus": "Corylus",
-      "specificEpithet": "americana",
+      "species": "americana",
       "commonNames": ["American Hazelnut"],
       "usdaCode": "COAM3",
       "fgcaCommonality": [
@@ -1625,7 +1595,7 @@
     },
     {
       "genus": "Crataegus",
-      "specificEpithet": "crus-galli",
+      "species": "crus-galli",
       "commonNames": ["Cockspur Hawthorn"],
       "usdaCode": "CRCR2",
       "fgcaCommonality": [
@@ -1647,7 +1617,7 @@
     },
     {
       "genus": "Crataegus",
-      "specificEpithet": "mollis",
+      "species": "mollis",
       "commonNames": ["Downy Hawthorn"],
       "usdaCode": "CRMO2",
       "fgcaCommonality": [
@@ -1669,9 +1639,8 @@
     },
     {
       "genus": "Crataegus",
-      "specificEpithet": "flabellata",
+      "species": "flabellata",
       "commonNames": ["Fanleaf Hawthorn"],
-      "usdaCode": null,
       "fgcaCommonality": [
         {
           "ecoRegion": { "code": "6E", "commonality": "C" },
@@ -1691,9 +1660,8 @@
     },
     {
       "genus": "Crataegus",
-      "specificEpithet": "chrysocarpa",
+      "species": "chrysocarpa",
       "commonNames": ["Fireberry Hawthorn"],
-      "usdaCode": null,
       "fgcaCommonality": [
         {
           "ecoRegion": { "code": "6E", "commonality": "C" },
@@ -1713,7 +1681,7 @@
     },
     {
       "genus": "Crataegus",
-      "specificEpithet": "succulenta",
+      "species": "succulenta",
       "commonNames": ["Fleshy Hawthorn"],
       "usdaCode": "CRSU5",
       "fgcaCommonality": [
@@ -1735,7 +1703,7 @@
     },
     {
       "genus": "Diervilla",
-      "specificEpithet": "lonicera",
+      "species": "lonicera",
       "commonNames": ["Nothern Bush Honeysuckle"],
       "usdaCode": "DILO",
       "fgcaCommonality": [
@@ -1768,7 +1736,7 @@
     },
     {
       "genus": "Dirca",
-      "specificEpithet": "palustris",
+      "species": "palustris",
       "commonNames": ["Eastern Leatherwood"],
       "usdaCode": "DIPA9",
       "fgcaCommonality": [
@@ -1790,7 +1758,7 @@
     },
     {
       "genus": "Euonymus",
-      "specificEpithet": "atropurpureus",
+      "species": "atropurpureus",
       "commonNames": ["Burning-bush Euonymus", "Burningbush"],
       "usdaCode": "EUAT5",
       "fgcaCommonality": [
@@ -1812,7 +1780,7 @@
     },
     {
       "genus": "Hamamelis",
-      "specificEpithet": "virginiana",
+      "species": "virginiana",
       "commonNames": ["Witchhazel", "American Witchhazel"],
       "usdaCode": "HAVI4",
       "fgcaCommonality": [
@@ -1845,7 +1813,7 @@
     },
     {
       "genus": "Ilex",
-      "specificEpithet": "verticillata",
+      "species": "verticillata",
       "commonNames": ["Common Winterberry"],
       "usdaCode": "ILVE",
       "fgcaCommonality": [
@@ -1867,7 +1835,7 @@
     },
     {
       "genus": "Lindera",
-      "specificEpithet": "benzoin",
+      "species": "benzoin",
       "commonNames": ["Northern Spicebush"],
       "usdaCode": "LIBE3",
       "fgcaCommonality": [
@@ -1900,9 +1868,8 @@
     },
     {
       "genus": "Lonicera",
-      "specificEpithet": "canadensis",
+      "species": "canadensis",
       "commonNames": ["Fly Honeysuckle"],
-      "usdaCode": null,
       "fgcaCommonality": [
         {
           "ecoRegion": { "code": "6E", "commonality": "C" },
@@ -1922,7 +1889,7 @@
     },
     {
       "genus": "Lonicera",
-      "specificEpithet": "dioica",
+      "species": "dioica",
       "commonNames": ["Glaucous Honeysuckle", "Limber Honeysuckle"],
       "usdaCode": "LODI2",
       "fgcaCommonality": [
@@ -1944,7 +1911,7 @@
     },
     {
       "genus": "Lonicera",
-      "specificEpithet": "villosa",
+      "species": "villosa",
       "commonNames": ["Mountain Fly Honeysuckle"],
       "usdaCode": "LOVI",
       "fgcaCommonality": [
@@ -1966,7 +1933,7 @@
     },
     {
       "genus": "Lonicera",
-      "specificEpithet": "oblongifolia",
+      "species": "oblongifolia",
       "commonNames": ["Swamp Fly Honeysuckle"],
       "usdaCode": "LOOB",
       "fgcaCommonality": [
@@ -1988,9 +1955,8 @@
     },
     {
       "genus": "Nemopanthus",
-      "specificEpithet": "mucronata",
+      "species": "mucronata",
       "commonNames": ["Mountain Holly"],
-      "usdaCode": null,
       "fgcaCommonality": [
         {
           "ecoRegion": { "code": "6E", "commonality": "C" },
@@ -2010,7 +1976,7 @@
     },
     {
       "genus": "Physocarpus",
-      "specificEpithet": "opulifolius",
+      "species": "opulifolius",
       "commonNames": ["Common Ninebark"],
       "usdaCode": "PHOP",
       "fgcaCommonality": [
@@ -2043,7 +2009,7 @@
     },
     {
       "genus": "Potentilla",
-      "specificEpithet": "fruticosa",
+      "species": "fruticosa",
       "commonNames": ["Shrubby Cinquefoil"],
       "usdaCode": "DAFR6",
       "fgcaCommonality": [
@@ -2065,7 +2031,7 @@
     },
     {
       "genus": "Prunus",
-      "specificEpithet": "nigra",
+      "species": "nigra",
       "commonNames": ["Canadian Plum"],
       "usdaCode": "PRNI",
       "fgcaCommonality": [
@@ -2087,7 +2053,7 @@
     },
     {
       "genus": "Prunus",
-      "specificEpithet": "virginiana",
+      "species": "virginiana",
       "commonNames": ["Chokecherry"],
       "usdaCode": "PRVI",
       "fgcaCommonality": [
@@ -2109,7 +2075,7 @@
     },
     {
       "genus": "Prunus",
-      "specificEpithet": "pensylvanica",
+      "species": "pensylvanica",
       "commonNames": ["Pin Cherry"],
       "usdaCode": "PRPE2",
       "fgcaCommonality": [
@@ -2142,7 +2108,7 @@
     },
     {
       "genus": "Prunus",
-      "specificEpithet": "pumila",
+      "species": "pumila",
       "commonNames": ["Sandcherry"],
       "usdaCode": "PRPU3",
       "fgcaCommonality": [
@@ -2175,7 +2141,7 @@
     },
     {
       "genus": "Prunus",
-      "specificEpithet": "americana",
+      "species": "americana",
       "commonNames": ["Wild Plum", "American Plum"],
       "usdaCode": "PRAM",
       "fgcaCommonality": [
@@ -2208,7 +2174,7 @@
     },
     {
       "genus": "Rhamnus",
-      "specificEpithet": "alnifolia",
+      "species": "alnifolia",
       "commonNames": ["Alder-leaved Buckthorn", "Alderleaved Buckthorn"],
       "usdaCode": "RHAL",
       "fgcaCommonality": [
@@ -2230,7 +2196,7 @@
     },
     {
       "genus": "Rhus",
-      "specificEpithet": "aromatica",
+      "species": "aromatica",
       "commonNames": ["Fragrant sumac"],
       "usdaCode": "RHARS",
       "fgcaCommonality": [
@@ -2263,7 +2229,7 @@
     },
     {
       "genus": "Rhus",
-      "specificEpithet": "vernix",
+      "species": "vernix",
       "commonNames": ["Poison Sumac"],
       "usdaCode": "TOVE",
       "fgcaCommonality": [
@@ -2285,7 +2251,7 @@
     },
     {
       "genus": "Rhus",
-      "specificEpithet": "glabra",
+      "species": "glabra",
       "commonNames": ["Smooth Sumac"],
       "usdaCode": "RHGL",
       "fgcaCommonality": [
@@ -2307,7 +2273,7 @@
     },
     {
       "genus": "Rhus",
-      "specificEpithet": "typhina",
+      "species": "typhina",
       "commonNames": ["Staghorn Sumac"],
       "usdaCode": "RHTY",
       "fgcaCommonality": [
@@ -2340,7 +2306,7 @@
     },
     {
       "genus": "Rosa",
-      "specificEpithet": "carolina",
+      "species": "carolina",
       "commonNames": ["Pasture Rose", "Carolina Rose"],
       "usdaCode": "ROCA4",
       "fgcaCommonality": [
@@ -2362,7 +2328,7 @@
     },
     {
       "genus": "Rosa",
-      "specificEpithet": "acicularis",
+      "species": "acicularis",
       "commonNames": ["Prickly Wild Rose"],
       "usdaCode": "ROAC",
       "fgcaCommonality": [
@@ -2384,7 +2350,7 @@
     },
     {
       "genus": "Rosa",
-      "specificEpithet": "blanda",
+      "species": "blanda",
       "commonNames": ["Smooth Wild Rose"],
       "usdaCode": "ROBL",
       "fgcaCommonality": [
@@ -2417,7 +2383,7 @@
     },
     {
       "genus": "Rosa",
-      "specificEpithet": "palustris",
+      "species": "palustris",
       "commonNames": ["Swamp Rose"],
       "usdaCode": "ROPA",
       "fgcaCommonality": [
@@ -2439,9 +2405,8 @@
     },
     {
       "genus": "Rosa",
-      "specificEpithet": "eglanteria",
+      "species": "eglanteria",
       "commonNames": ["Sweetbrier"],
-      "usdaCode": null,
       "fgcaCommonality": [
         {
           "ecoRegion": { "code": "6E", "commonality": "C" },
@@ -2461,7 +2426,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "serissima",
+      "species": "serissima",
       "commonNames": ["Autumn Willow"],
       "usdaCode": "SASE2",
       "fgcaCommonality": [
@@ -2483,7 +2448,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "bebbiana",
+      "species": "bebbiana",
       "commonNames": ["Bebb's Willow", "Bebb Willow"],
       "usdaCode": "SABE2",
       "fgcaCommonality": [
@@ -2505,7 +2470,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "nigra",
+      "species": "nigra",
       "commonNames": ["Black Willow"],
       "usdaCode": "SANI",
       "fgcaCommonality": [
@@ -2527,7 +2492,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "myricoides",
+      "species": "myricoides",
       "commonNames": ["Blue-leaved Willow", "Bayberry Willow"],
       "usdaCode": "SAMY2",
       "fgcaCommonality": [
@@ -2549,7 +2514,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "pedicellaris",
+      "species": "pedicellaris",
       "commonNames": ["Bog Willow"],
       "usdaCode": "SAPE2",
       "fgcaCommonality": [
@@ -2571,7 +2536,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "cordata",
+      "species": "cordata",
       "commonNames": ["Heart-leaved Willow", "Heartleaf Willow"],
       "usdaCode": "SACO3",
       "fgcaCommonality": [
@@ -2593,7 +2558,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "amygdaloides",
+      "species": "amygdaloides",
       "commonNames": ["Peachleaf Willow"],
       "usdaCode": "SAAM2",
       "fgcaCommonality": [
@@ -2615,7 +2580,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "discolor",
+      "species": "discolor",
       "commonNames": ["Pussy Willow"],
       "usdaCode": "SADI",
       "fgcaCommonality": [
@@ -2637,7 +2602,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "candida",
+      "species": "candida",
       "commonNames": ["Sage-leaved Willow", "Sageleaf Willow"],
       "usdaCode": "SACA4",
       "fgcaCommonality": [
@@ -2659,7 +2624,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "exigua",
+      "species": "exigua",
       "commonNames": ["Sandbar Willow", "Narrowleaf Willow"],
       "usdaCode": "SAEX",
       "fgcaCommonality": [
@@ -2681,7 +2646,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "lucida",
+      "species": "lucida",
       "commonNames": ["Shining Willow"],
       "usdaCode": "SALU",
       "fgcaCommonality": [
@@ -2703,7 +2668,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "petiolaris",
+      "species": "petiolaris",
       "commonNames": ["Slender Willow", "Meadow Willow"],
       "usdaCode": "SAPE5",
       "fgcaCommonality": [
@@ -2725,7 +2690,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "humilis",
+      "species": "humilis",
       "commonNames": ["Upland Willow", "Prairie Willow"],
       "usdaCode": "SAHU2",
       "fgcaCommonality": [
@@ -2747,7 +2712,7 @@
     },
     {
       "genus": "Salix",
-      "specificEpithet": "eriocephala",
+      "species": "eriocephala",
       "commonNames": ["Willow", "Missouri River Willow"],
       "usdaCode": "SAER",
       "fgcaCommonality": [
@@ -2769,7 +2734,7 @@
     },
     {
       "genus": "Sambucus",
-      "specificEpithet": "canadensis",
+      "species": "canadensis",
       "commonNames": ["American Elderberry"],
       "usdaCode": "SANIC4",
       "fgcaCommonality": [
@@ -2802,7 +2767,7 @@
     },
     {
       "genus": "Sambucus",
-      "specificEpithet": "racemosa",
+      "species": "racemosa",
       "commonNames": ["Red Elderberry"],
       "usdaCode": "SARAR3",
       "fgcaCommonality": [
@@ -2824,7 +2789,7 @@
     },
     {
       "genus": "Shepherdia",
-      "specificEpithet": "canadensis",
+      "species": "canadensis",
       "commonNames": ["Russet Buffalo Berry", "Russet Buffaloberry"],
       "usdaCode": "SHCA",
       "fgcaCommonality": [
@@ -2846,7 +2811,7 @@
     },
     {
       "genus": "Sorbus",
-      "specificEpithet": "americana",
+      "species": "americana",
       "commonNames": ["American Mountain Ash"],
       "usdaCode": "SOAM3",
       "fgcaCommonality": [
@@ -2868,7 +2833,7 @@
     },
     {
       "genus": "Spiraea",
-      "specificEpithet": "latifolia",
+      "species": "latifolia",
       "commonNames": ["Broad-leaved Meadowsweet"],
       "usdaCode": "SPALL",
       "fgcaCommonality": [
@@ -2890,7 +2855,7 @@
     },
     {
       "genus": "Spiraea",
-      "specificEpithet": "alba",
+      "species": "alba",
       "commonNames": ["Narrow-leaved Meadowsweet", "White Meadowsweet"],
       "usdaCode": "SPAL2",
       "fgcaCommonality": [
@@ -2923,7 +2888,7 @@
     },
     {
       "genus": "Spiraea",
-      "specificEpithet": "tomentosa",
+      "species": "tomentosa",
       "commonNames": ["Steeple-bush", "Steeplebush"],
       "usdaCode": "SPTO2",
       "fgcaCommonality": [
@@ -2956,7 +2921,7 @@
     },
     {
       "genus": "Staphylea",
-      "specificEpithet": "trifolia",
+      "species": "trifolia",
       "commonNames": ["American Bladdernut"],
       "usdaCode": "STTR",
       "fgcaCommonality": [
@@ -2978,7 +2943,7 @@
     },
     {
       "genus": "Symphoricarpos",
-      "specificEpithet": "albus",
+      "species": "albus",
       "commonNames": ["Common Snowberry"],
       "usdaCode": "SYAL",
       "fgcaCommonality": [
@@ -3000,7 +2965,7 @@
     },
     {
       "genus": "Vaccinium",
-      "specificEpithet": "corymbosum",
+      "species": "corymbosum",
       "commonNames": ["High bush blueberry"],
       "usdaCode": "VACO",
       "fgcaCommonality": [
@@ -3022,7 +2987,7 @@
     },
     {
       "genus": "Viburnum",
-      "specificEpithet": "rafinesqueanum",
+      "species": "rafinesqueanum",
       "commonNames": ["Downy Arrow-wood", "Downy Arrowwood"],
       "usdaCode": "VIRA",
       "fgcaCommonality": [
@@ -3044,7 +3009,7 @@
     },
     {
       "genus": "Viburnum",
-      "specificEpithet": "trilobum",
+      "species": "trilobum",
       "commonNames": ["High-bush Cranberry"],
       "usdaCode": "VIOPA2",
       "fgcaCommonality": [
@@ -3066,7 +3031,7 @@
     },
     {
       "genus": "Viburnum",
-      "specificEpithet": "alnifolium",
+      "species": "alnifolium",
       "commonNames": ["Hobble-bush"],
       "usdaCode": "VILA11",
       "fgcaCommonality": [
@@ -3088,7 +3053,7 @@
     },
     {
       "genus": "Viburnum",
-      "specificEpithet": "lentago",
+      "species": "lentago",
       "commonNames": ["Nannyberry"],
       "usdaCode": "VILE",
       "fgcaCommonality": [
@@ -3121,9 +3086,8 @@
     },
     {
       "genus": "Zanthoxylum",
-      "specificEpithet": "americanum",
+      "species": "americanum",
       "commonNames": ["Prickly Ash"],
-      "usdaCode": null,
       "fgcaCommonality": [
         {
           "ecoRegion": { "code": "6E", "commonality": "C" },
@@ -3143,7 +3107,7 @@
     },
     {
       "genus": "Lonicera",
-      "specificEpithet": "hirsuta",
+      "species": "hirsuta",
       "commonNames": ["Hairy Honeysuckle"],
       "usdaCode": "LOHI",
       "fgcaCommonality": [
@@ -3165,7 +3129,7 @@
     },
     {
       "genus": "Parthenocissus",
-      "specificEpithet": "vitacea",
+      "species": "vitacea",
       "commonNames": ["Virginia Creeper", "Woodbine"],
       "usdaCode": "PAVI5",
       "fgcaCommonality": [
@@ -3187,7 +3151,7 @@
     },
     {
       "genus": "Rhus",
-      "specificEpithet": "radicans",
+      "species": "radicans",
       "commonNames": ["Poison Ivy"],
       "usdaCode": "TORAR",
       "fgcaCommonality": [
@@ -3209,7 +3173,7 @@
     },
     {
       "genus": "Vitis",
-      "specificEpithet": "riparia",
+      "species": "riparia",
       "commonNames": ["Riverbank Grape"],
       "usdaCode": "VIRI",
       "fgcaCommonality": [
@@ -3231,7 +3195,7 @@
     },
     {
       "genus": "Vitis",
-      "specificEpithet": "aestivalis",
+      "species": "aestivalis",
       "commonNames": ["Summer Grape"],
       "usdaCode": "VIAE",
       "fgcaCommonality": [
@@ -3253,7 +3217,7 @@
     },
     {
       "genus": "Allium",
-      "specificEpithet": "cernuum",
+      "species": "cernuum",
       "commonNames": ["Nodding Onion"],
       "usdaCode": "ALCE2",
       "growthHabit": "forb",
@@ -3279,7 +3243,7 @@
     },
     {
       "genus": "Anaphalis",
-      "specificEpithet": "margaritacea",
+      "species": "margaritacea",
       "commonNames": ["Western Pearly Everlasting"],
       "usdaCode": "ANMA",
       "growthHabit": "forb",
@@ -3305,7 +3269,7 @@
     },
     {
       "genus": "Anemone",
-      "specificEpithet": "canadensis",
+      "species": "canadensis",
       "commonNames": ["Canadian Anemone"],
       "usdaCode": "ANCA8",
       "growthHabit": "forb",
@@ -3331,9 +3295,8 @@
     },
     {
       "genus": "Aquilegia",
-      "specificEpithet": "canadensis",
+      "species": "canadensis",
       "commonNames": ["Wild Columbine", "Canadian Columbine", "Eastern Red Columbine"],
-      "usdaCode": null,
       "growthHabit": "forb",
       "hardinessZones": { "min": "3", "max": "7" },
       "matureSize": {
@@ -3357,7 +3320,7 @@
     },
     {
       "genus": "Asarum",
-      "specificEpithet": "canadense",
+      "species": "canadense",
       "commonNames": ["Wild Ginger"],
       "usdaCode": "ASCA",
       "growthHabit": "forb",
@@ -3383,7 +3346,7 @@
     },
     {
       "genus": "Asclepias",
-      "specificEpithet": "incarnata",
+      "species": "incarnata",
       "commonNames": ["Swamp Milkweed"],
       "usdaCode": "ASIN",
       "growthHabit": "forb",
@@ -3409,7 +3372,7 @@
     },
     {
       "genus": "Asclepias",
-      "specificEpithet": "syriaca",
+      "species": "syriaca",
       "commonNames": ["Common Milkweed"],
       "usdaCode": "ASSY",
       "growthHabit": "forb",
@@ -3435,7 +3398,7 @@
     },
     {
       "genus": "Asclepias",
-      "specificEpithet": "tuberosa",
+      "species": "tuberosa",
       "commonNames": ["Butterfly Milkweek"],
       "usdaCode": "ASTU",
       "growthHabit": "forb",
@@ -3461,7 +3424,7 @@
     },
     {
       "genus": "Baptisia",
-      "specificEpithet": "australis",
+      "species": "australis",
       "commonNames": ["Blue Wild Indigo"],
       "usdaCode": "BAAUA",
       "growthHabit": "forb",
@@ -3487,7 +3450,7 @@
     },
     {
       "genus": "Caltha",
-      "specificEpithet": "palustris",
+      "species": "palustris",
       "commonNames": ["Yellow Marsh Marigold"],
       "usdaCode": "CAPA5",
       "growthHabit": "forb",
@@ -3513,7 +3476,7 @@
     },
     {
       "genus": "Campanula",
-      "specificEpithet": "rotundifolia",
+      "species": "rotundifolia",
       "commonNames": ["Harebell", "Bluebell Bellflower"],
       "usdaCode": "CARO2",
       "growthHabit": "forb",
@@ -3539,7 +3502,7 @@
     },
     {
       "genus": "Coreopsis",
-      "specificEpithet": "lanceolata",
+      "species": "lanceolata",
       "commonNames": ["Lanceleaf coreopsis", "Lanceleaf tickseen"],
       "usdaCode": "COLA5",
       "growthHabit": "forb",
@@ -3565,7 +3528,7 @@
     },
     {
       "genus": "Echinacea",
-      "specificEpithet": "purpurea",
+      "species": "purpurea",
       "commonNames": ["Eastern Purple Coneflower"],
       "usdaCode": "ECPU",
       "growthHabit": "forb",
@@ -3591,7 +3554,7 @@
     },
     {
       "genus": "Eutrochium",
-      "specificEpithet": "maculatum",
+      "species": "maculatum",
       "commonNames": ["Spotted Joe Pye Weed"],
       "usdaCode": "EUMA9",
       "growthHabit": "forb",
@@ -3617,7 +3580,7 @@
     },
     {
       "genus": "Eutrochium",
-      "specificEpithet": "purpureum",
+      "species": "purpureum",
       "commonNames": ["Sweet Joe Pye Weed"],
       "usdaCode": "EUPU21",
       "growthHabit": "forb",
@@ -3643,7 +3606,7 @@
     },
     {
       "genus": "Eurybia",
-      "specificEpithet": "macrophylla",
+      "species": "macrophylla",
       "commonNames": ["Large Leaved Aster", "Bigleaf Aster"],
       "usdaCode": "EUMA27",
       "growthHabit": "forb",
@@ -3669,7 +3632,7 @@
     },
     {
       "genus": "Fragaria",
-      "specificEpithet": "vesca",
+      "species": "vesca",
       "commonNames": ["Woodland Strawberry"],
       "usdaCode": "FRVEA4",
       "growthHabit": "forb",
@@ -3695,7 +3658,7 @@
     },
     {
       "genus": "Fragaria",
-      "specificEpithet": "virginiana",
+      "species": "virginiana",
       "commonNames": ["Wild Strawberry", "Verginia Strawberry"],
       "usdaCode": "FRVIG2",
       "growthHabit": "forb",
@@ -3721,7 +3684,7 @@
     },
     {
       "genus": "Geranium",
-      "specificEpithet": "maculatum",
+      "species": "maculatum",
       "commonNames": ["Wild Geranium", "Spotted Geranium"],
       "usdaCode": "GEMA",
       "growthHabit": "forb",
@@ -3747,7 +3710,7 @@
     },
     {
       "genus": "Geum",
-      "specificEpithet": "triflorum",
+      "species": "triflorum",
       "commonNames": ["Prairie Smoke", "Old Man's Whiskers"],
       "usdaCode": "GETR",
       "growthHabit": "forb",
@@ -3773,7 +3736,7 @@
     },
     {
       "genus": "Gentiana",
-      "specificEpithet": "andrewsii",
+      "species": "andrewsii",
       "commonNames": ["Closed Bottle Gentian"],
       "usdaCode": "GEAN",
       "growthHabit": "forb",
@@ -3799,7 +3762,7 @@
     },
     {
       "genus": "Helianthus",
-      "specificEpithet": "divaricatus",
+      "species": "divaricatus",
       "commonNames": ["Woodland Sunflower"],
       "usdaCode": "HEDI2",
       "growthHabit": "forb",
@@ -3825,7 +3788,7 @@
     },
     {
       "genus": "Heliopsis",
-      "specificEpithet": "helianthoides",
+      "species": "helianthoides",
       "commonNames": ["Smooth Oxeye"],
       "usdaCode": "HEHEH",
       "growthHabit": "forb",
@@ -3851,7 +3814,7 @@
     },
     {
       "genus": "Hibiscus",
-      "specificEpithet": "moscheutos",
+      "species": "moscheutos",
       "commonNames": ["Rose Mallow", "Crimsoneyed Rosemallow"],
       "usdaCode": "HIMO",
       "growthHabit": "forb",
@@ -3877,7 +3840,7 @@
     },
     {
       "genus": "Iris",
-      "specificEpithet": "versicolor",
+      "species": "versicolor",
       "commonNames": ["Blue Flag Iris", "Harlequin Blueflag", "Northern Blueflag Iris"],
       "usdaCode": "IRVE2",
       "growthHabit": "forb",
@@ -3903,7 +3866,7 @@
     },
     {
       "genus": "Liatris",
-      "specificEpithet": "cylindracea",
+      "species": "cylindracea",
       "commonNames": ["Cylindrical Blazing Star", "Ontario Blazing Star"],
       "usdaCode": "LICY",
       "growthHabit": "forb",
@@ -3929,7 +3892,7 @@
     },
     {
       "genus": "Liatris",
-      "specificEpithet": "spicata",
+      "species": "spicata",
       "commonNames": ["Dense Blazing Star"],
       "usdaCode": "LISP",
       "growthHabit": "forb",
@@ -3955,7 +3918,7 @@
     },
     {
       "genus": "Lobelia",
-      "specificEpithet": "cardinalis",
+      "species": "cardinalis",
       "commonNames": ["Cardinal Flower"],
       "usdaCode": "LOCA2",
       "growthHabit": "forb",
@@ -3981,7 +3944,7 @@
     },
     {
       "genus": "Lobelia",
-      "specificEpithet": "siphilitica",
+      "species": "siphilitica",
       "commonNames": ["Great Blue Lobelia"],
       "usdaCode": "LOSIL",
       "growthHabit": "forb",
@@ -4007,7 +3970,7 @@
     },
     {
       "genus": "Lupinus",
-      "specificEpithet": "perennis",
+      "species": "perennis",
       "commonNames": ["Wild Lupine", "Sundial Lupine"],
       "usdaCode": "LUPE3",
       "growthHabit": "forb",
@@ -4033,7 +3996,7 @@
     },
     {
       "genus": "Maianthemum",
-      "specificEpithet": "racemosum",
+      "species": "racemosum",
       "commonNames": ["False Solomon's Seal", "Feathery False Lily of the Valley"],
       "usdaCode": "MARA7",
       "growthHabit": "forb",
@@ -4059,7 +4022,7 @@
     },
     {
       "genus": "Mertensia",
-      "specificEpithet": "virginica",
+      "species": "virginica",
       "commonNames": ["Virginia Bluebells"],
       "usdaCode": "MEVI3",
       "growthHabit": "forb",
@@ -4085,7 +4048,7 @@
     },
     {
       "genus": "Monarda",
-      "specificEpithet": "didyma",
+      "species": "didyma",
       "commonNames": ["Scarlet Beebalm"],
       "usdaCode": "MODI",
       "growthHabit": "forb",
@@ -4111,7 +4074,7 @@
     },
     {
       "genus": "Monarda",
-      "specificEpithet": "fistulosa",
+      "species": "fistulosa",
       "commonNames": ["Wild Bergamot"],
       "usdaCode": "MOFI",
       "growthHabit": "forb",
@@ -4137,7 +4100,7 @@
     },
     {
       "genus": "Monarda",
-      "specificEpithet": "punctata",
+      "species": "punctata",
       "commonNames": ["Spotted Beebalm"],
       "usdaCode": "MOPU",
       "growthHabit": "forb",
@@ -4163,7 +4126,7 @@
     },
     {
       "genus": "Parnassia",
-      "specificEpithet": "glauca",
+      "species": "glauca",
       "commonNames": ["Fen Grass of Parnassus", "Bog Stars"],
       "usdaCode": "PAGL3",
       "growthHabit": "forb",
@@ -4189,7 +4152,7 @@
     },
     {
       "genus": "Penstemon",
-      "specificEpithet": "digitalis",
+      "species": "digitalis",
       "commonNames": ["Foxglove Beardtongue"],
       "usdaCode": "PEDI",
       "growthHabit": "forb",
@@ -4215,7 +4178,7 @@
     },
     {
       "genus": "Pycnanthemum",
-      "specificEpithet": "virginianum",
+      "species": "virginianum",
       "commonNames": ["Mountain Mint", "Virginia Mountainmint"],
       "usdaCode": "PYVI",
       "growthHabit": "forb",
@@ -4241,7 +4204,7 @@
     },
     {
       "genus": "Ratibida",
-      "specificEpithet": "pinnata",
+      "species": "pinnata",
       "commonNames": ["Yellow Coneflower", "Pinnate Prairie Cconeflower"],
       "usdaCode": "RAPI",
       "growthHabit": "forb",
@@ -4267,7 +4230,7 @@
     },
     {
       "genus": "Rudbeckia",
-      "specificEpithet": "hirta",
+      "species": "hirta",
       "commonNames": ["Black-eyed Susan"],
       "usdaCode": "RUHI2",
       "growthHabit": "forb",
@@ -4293,7 +4256,7 @@
     },
     {
       "genus": "Sanguinaria",
-      "specificEpithet": "canadensis",
+      "species": "canadensis",
       "commonNames": ["Bloodroot"],
       "usdaCode": "SACA13",
       "growthHabit": "forb",
@@ -4319,7 +4282,7 @@
     },
     {
       "genus": "Solidago",
-      "specificEpithet": "caesia",
+      "species": "caesia",
       "commonNames": ["Blue-stem Goldenrod", "Wreath Goldenrod"],
       "usdaCode": "SOCA4",
       "growthHabit": "forb",
@@ -4345,7 +4308,7 @@
     },
     {
       "genus": "Symphyotrichum",
-      "specificEpithet": "cordifoliumo",
+      "species": "cordifoliumo",
       "commonNames": ["Heart-leaved Aster", "Common Blue Wood Aster"],
       "usdaCode": "SYCO4",
       "growthHabit": "forb",
@@ -4371,7 +4334,7 @@
     },
     {
       "genus": "Symphyotrichum",
-      "specificEpithet": "laeve",
+      "species": "laeve",
       "commonNames": ["Smooth Blue Aster"],
       "usdaCode": "SYLA3",
       "growthHabit": "forb",
@@ -4397,7 +4360,7 @@
     },
     {
       "genus": "Symphyotrichum",
-      "specificEpithet": "novae-angliae",
+      "species": "novae-angliae",
       "commonNames": ["New England Aster"],
       "usdaCode": "SYNO2",
       "growthHabit": "forb",
@@ -4423,7 +4386,7 @@
     },
     {
       "genus": "Verbena",
-      "specificEpithet": "simplex",
+      "species": "simplex",
       "commonNames": ["Narrow-leaved Vervain", "Narrowleaf Vervain"],
       "usdaCode": "VESI",
       "growthHabit": "forb",
@@ -4449,7 +4412,7 @@
     },
     {
       "genus": "Andropogon",
-      "specificEpithet": "gerardii",
+      "species": "gerardii",
       "commonNames": ["Big Bluestem"],
       "usdaCode": "ANGE",
       "growthHabit": "graminoid",
@@ -4475,7 +4438,7 @@
     },
     {
       "genus": "Bouteloua",
-      "specificEpithet": "curtipendula",
+      "species": "curtipendula",
       "commonNames": ["Side Oats Grama"],
       "usdaCode": "BOCU",
       "growthHabit": "graminoid",
@@ -4501,7 +4464,7 @@
     },
     {
       "genus": "Elymus",
-      "specificEpithet": "hystrix",
+      "species": "hystrix",
       "commonNames": ["Eastern Bottlebrush Grass"],
       "usdaCode": "ELHY",
       "growthHabit": "graminoid",
@@ -4527,7 +4490,7 @@
     },
     {
       "genus": "Panicum",
-      "specificEpithet": "virgatum",
+      "species": "virgatum",
       "commonNames": ["Switchgrass"],
       "usdaCode": "PAVI2",
       "growthHabit": "graminoid",
@@ -4553,7 +4516,7 @@
     },
     {
       "genus": "Schizachyrium",
-      "specificEpithet": "scoparium",
+      "species": "scoparium",
       "commonNames": ["Little Bluestem"],
       "usdaCode": "SCSC",
       "growthHabit": "graminoid",
@@ -4579,7 +4542,7 @@
     },
     {
       "genus": "Sporobolus",
-      "specificEpithet": "heterolepis",
+      "species": "heterolepis",
       "commonNames": ["Prairie Dropseed"],
       "usdaCode": "SPHE",
       "growthHabit": "graminoid",
@@ -4605,7 +4568,7 @@
     },
     {
       "genus": "Sorghastrum",
-      "specificEpithet": "nutans",
+      "species": "nutans",
       "commonNames": ["Indian Grass"],
       "usdaCode": "SONU2",
       "growthHabit": "graminoid",
@@ -4631,7 +4594,7 @@
     },
     {
       "genus": "Carex",
-      "specificEpithet": "bebbii",
+      "species": "bebbii",
       "commonNames": ["Bebb's Sedge"],
       "usdaCode": "CABE2",
       "growthHabit": "graminoid",
@@ -4657,7 +4620,7 @@
     },
     {
       "genus": "Carex",
-      "specificEpithet": "vulpinoidea",
+      "species": "vulpinoidea",
       "commonNames": ["Fox Sedge"],
       "usdaCode": "CAVU2",
       "growthHabit": "graminoid",
@@ -4683,7 +4646,7 @@
     },
     {
       "genus": "Athyrium",
-      "specificEpithet": "felix-femina",
+      "species": "felix-femina",
       "commonNames": ["Common Ladyfern"],
       "usdaCode": "ATFI",
       "growthHabit": "forb",
@@ -4709,7 +4672,7 @@
     },
     {
       "genus": "Cystopteris",
-      "specificEpithet": "bulbifera",
+      "species": "bulbifera",
       "commonNames": ["Berry Bladder", "Bulblet Bladderfern"],
       "usdaCode": "CYBU3",
       "growthHabit": "forb",
@@ -4735,7 +4698,7 @@
     },
     {
       "genus": "Dryopteris",
-      "specificEpithet": "marginalis",
+      "species": "marginalis",
       "commonNames": ["Marginal Wood Fern"],
       "usdaCode": "DRMA4",
       "growthHabit": "forb",
@@ -4761,7 +4724,7 @@
     },
     {
       "genus": "Onoclea",
-      "specificEpithet": "sensibilis",
+      "species": "sensibilis",
       "commonNames": ["Sensitive Fern"],
       "usdaCode": "ONSE",
       "growthHabit": "forb",
@@ -4787,7 +4750,7 @@
     },
     {
       "genus": "Asimina",
-      "specificEpithet": "triloba",
+      "species": "triloba",
       "commonNames": ["Paw Paw"],
       "usdaCode": "ASTR",
       "growthHabit": "tree",
@@ -4813,7 +4776,7 @@
     },
     {
       "genus": "Betula",
-      "specificEpithet": "lenta",
+      "species": "lenta",
       "commonNames": ["Cherry Birch", "Sweet Birch"],
       "usdaCode": "BELE",
       "growthHabit": "tree",
@@ -4839,7 +4802,7 @@
     },
     {
       "genus": "Cercis",
-      "specificEpithet": "canadensis",
+      "species": "canadensis",
       "commonNames": ["Eastern Redbud"],
       "usdaCode": "CECA4",
       "growthHabit": "tree",
@@ -4865,7 +4828,7 @@
     },
     {
       "genus": "Cornus",
-      "specificEpithet": "florida",
+      "species": "florida",
       "commonNames": ["Flowering Dogwood"],
       "usdaCode": "COFL2",
       "growthHabit": "tree",
@@ -4891,9 +4854,9 @@
     },
     {
       "genus": "Gymnocladus",
-      "specificEpithet": "dioicus",
+      "species": "dioicus",
       "commonNames": ["Kentucky Coffee Tree"],
-      "usdaCode": null,
+      "usdaCode": "GYDI",
       "growthHabit": "tree",
       "hardinessZones": { "min": "3", "max": "7" },
       "matureSize": {
@@ -4917,7 +4880,7 @@
     },
     {
       "genus": "Liriodendron",
-      "specificEpithet": "tulipifera",
+      "species": "tulipifera",
       "commonNames": ["Tulip Tree"],
       "usdaCode": "LITU",
       "growthHabit": "tree",
@@ -4943,7 +4906,7 @@
     },
     {
       "genus": "Nyssa",
-      "specificEpithet": "sylvatica",
+      "species": "sylvatica",
       "commonNames": ["Black gum"],
       "usdaCode": "NYSY",
       "growthHabit": "tree",
@@ -4969,7 +4932,7 @@
     },
     {
       "genus": "Ptelea",
-      "specificEpithet": "trifoliata",
+      "species": "trifoliata",
       "commonNames": ["Hop Tree", "Common HopTree"],
       "usdaCode": "PTTR",
       "growthHabit": "tree",
@@ -4995,7 +4958,7 @@
     },
     {
       "genus": "Quercus",
-      "specificEpithet": "ellipsoidalis",
+      "species": "ellipsoidalis",
       "commonNames": ["Hill's Oak", "Norther Pin Oak"],
       "usdaCode": "QUEL",
       "growthHabit": "tree",
@@ -5021,9 +4984,8 @@
     },
     {
       "genus": "Amelanchier",
-      "specificEpithet": "canadensis",
+      "species": "canadensis",
       "commonNames": ["Canadian Serviceberry"],
-      "usdaCode": null,
       "growthHabit": "shrub",
       "hardinessZones": { "min": "4", "max": "7" },
       "matureSize": {
@@ -5047,7 +5009,7 @@
     },
     {
       "genus": "Ceanothus",
-      "specificEpithet": "americanus",
+      "species": "americanus",
       "commonNames": ["New Jersey Tea"],
       "usdaCode": "CEAM",
       "growthHabit": "shrub",
@@ -5073,7 +5035,7 @@
     },
     {
       "genus": "Hypericum",
-      "specificEpithet": "kalmianum",
+      "species": "kalmianum",
       "commonNames": ["Pot of Gold", "Kalm's St. Johnswort"],
       "usdaCode": "HYKA",
       "growthHabit": "shrub",
@@ -5099,7 +5061,7 @@
     },
     {
       "genus": "Hypericum",
-      "specificEpithet": "prolificum",
+      "species": "prolificum",
       "commonNames": ["Shrubby St. Johnswort"],
       "usdaCode": "HYPR",
       "growthHabit": "shrub",
@@ -5125,7 +5087,7 @@
     },
     {
       "genus": "Myrica",
-      "specificEpithet": "gale",
+      "species": "gale",
       "commonNames": ["Sweetgale"],
       "usdaCode": "MYGA",
       "growthHabit": "shrub",
@@ -5151,7 +5113,7 @@
     },
     {
       "genus": "Rubus",
-      "specificEpithet": "idaeus",
+      "species": "idaeus",
       "commonNames": ["American Red Raspberry"],
       "usdaCode": "RUID",
       "growthHabit": "shrub",
@@ -5177,7 +5139,7 @@
     },
     {
       "genus": "Rubus",
-      "specificEpithet": "occidentalis",
+      "species": "occidentalis",
       "commonNames": ["Black Raspberry"],
       "usdaCode": "RUOC",
       "growthHabit": "shrub",
@@ -5203,7 +5165,7 @@
     },
     {
       "genus": "Rubus",
-      "specificEpithet": "odoratus",
+      "species": "odoratus",
       "commonNames": ["Purple Flowering Raspberry"],
       "usdaCode": "RUOD",
       "growthHabit": "shrub",
@@ -5229,7 +5191,7 @@
     },
     {
       "genus": "Vaccinium",
-      "specificEpithet": "angustifolium",
+      "species": "angustifolium",
       "commonNames": ["Lowbush Blueberry"],
       "usdaCode": "VAAN",
       "growthHabit": "shrub",
@@ -5255,7 +5217,7 @@
     },
     {
       "genus": "Maianthemum",
-      "specificEpithet": "stellatum",
+      "species": "stellatum",
       "commonNames": ["Starry False Lily of the Valley", "Starry Solomon's Seal"],
       "usdaCode": "MAST4",
       "growthHabit": "forb",
@@ -5281,7 +5243,7 @@
     },
     {
       "genus": "Solidago",
-      "specificEpithet": "flexicaulis",
+      "species": "flexicaulis",
       "commonNames": ["Zigzag Goldenrod"],
       "usdaCode": "SOFL2",
       "growthHabit": "forb",
@@ -5302,7 +5264,7 @@
     },
     {
       "genus": "Tiarella",
-      "specificEpithet": "cordifolia",
+      "species": "cordifolia",
       "commonNames": ["Heartleaf Foamflower"],
       "usdaCode": "TICO",
       "growthHabit": "forb",
@@ -5327,7 +5289,7 @@
     },
     {
       "genus": "Hydrophyllum",
-      "specificEpithet": "virginianum",
+      "species": "virginianum",
       "commonNames": ["Eastern Waterleaf"],
       "usdaCode": "HYVI",
       "growthHabit": "forb",
@@ -5348,7 +5310,7 @@
     },
     {
       "genus": "Euonymus",
-      "specificEpithet": "obovatus",
+      "species": "obovatus",
       "commonNames": ["Running Euonymus", "Running Strawberry Bush"],
       "usdaCode": "EUOB8",
       "growthHabit": "shrub",
@@ -5373,7 +5335,7 @@
     },
     {
       "genus": "Podophyllum",
-      "specificEpithet": "peltatum",
+      "species": "peltatum",
       "commonNames": ["Mayapple"],
       "usdaCode": "POPE",
       "growthHabit": "forb",
@@ -5398,7 +5360,7 @@
     },
     {
       "genus": "Lilium",
-      "specificEpithet": "michiganense",
+      "species": "michiganense",
       "commonNames": ["Michigan Lily"],
       "usdaCode": "LIMI9",
       "growthHabit": "forb",
@@ -5423,7 +5385,7 @@
     },
     {
       "genus": "Echinacea",
-      "specificEpithet": "pallida",
+      "species": "pallida",
       "commonNames": ["Pale Purple Coneflower"],
       "usdaCode": "ECPA",
       "growthHabit": "forb",
@@ -5444,7 +5406,7 @@
     },
     {
       "genus": "Carex",
-      "specificEpithet": "pensylvanica",
+      "species": "pensylvanica",
       "commonNames": ["Pennsylvania Sedge"],
       "usdaCode": "CAPE6",
       "growthHabit": "graminoid",
@@ -5465,7 +5427,7 @@
     },
     {
       "genus": "Carex",
-      "specificEpithet": "eburnea",
+      "species": "eburnea",
       "commonNames": ["Ivory Sedge", "Bristleleaf Sedge"],
       "usdaCode": "CAEB2",
       "growthHabit": "graminoid",
@@ -5486,7 +5448,7 @@
     },
     {
       "genus": "Gleditsia",
-      "specificEpithet": "triacanthos",
+      "species": "triacanthos",
       "commonNames": ["honeylocust"],
       "usdaCode": "GLTR",
       "growthHabit": "tree",
@@ -5501,7 +5463,7 @@
     },
     {
       "genus": "Elaeagnus",
-      "specificEpithet": "commutata",
+      "species": "commutata",
       "commonNames": ["Silverberry"],
       "usdaCode": "ELCO",
       "growthHabit": "shrub",
@@ -5522,7 +5484,7 @@
     },
     {
       "genus": "Ribes",
-      "specificEpithet": "americanum",
+      "species": "americanum",
       "commonNames": ["Wild Black Currant", "American Black Currant"],
       "usdaCode": "RIAM2",
       "growthHabit": "shrub",
@@ -5543,7 +5505,7 @@
     },
     {
       "genus": "Morella",
-      "specificEpithet": "pensylvanica",
+      "species": "pensylvanica",
       "commonNames": ["Northern Bayberry"],
       "usdaCode": "MOPE6",
       "growthHabit": "shrub",
@@ -5568,9 +5530,8 @@
     },
     {
       "genus": "Hydrangea",
-      "specificEpithet": "petiolaris",
+      "species": "petiolaris",
       "commonNames": ["Climbing Hydrangea"],
-      "usdaCode": null,
       "growthHabit": "vine",
       "matureSize": {
         "unit": "m",
@@ -5593,7 +5554,7 @@
     },
     {
       "genus": "Aristolochia",
-      "specificEpithet": "macrophylla",
+      "species": "macrophylla",
       "commonNames": ["Pipevine", "Dutchman’s Pipe"],
       "usdaCode": "ARMA7",
       "growthHabit": "vine",
@@ -5618,7 +5579,7 @@
     },
     {
       "genus": "Clematis",
-      "specificEpithet": "virginiana",
+      "species": "virginiana",
       "commonNames": ["Devil's Darning Needles", "Virgin’s Bower"],
       "usdaCode": "CLVI5",
       "growthHabit": "vine",
@@ -5643,7 +5604,7 @@
     },
     {
       "genus": "Chelone",
-      "specificEpithet": "glabra",
+      "species": "glabra",
       "commonNames": ["White Turtlehead"],
       "usdaCode": "CHGL2",
       "growthHabit": "forb",
@@ -5664,7 +5625,7 @@
     },
     {
       "genus": "Verbena",
-      "specificEpithet": "hastata",
+      "species": "hastata",
       "commonNames": ["Swamp Verbena", "Blue Vervain"],
       "usdaCode": "VEHA2",
       "growthHabit": "forb",
@@ -5685,7 +5646,7 @@
     },
     {
       "genus": "Eupatorium",
-      "specificEpithet": "perfoliatum",
+      "species": "perfoliatum",
       "commonNames": ["Common Boneset"],
       "usdaCode": "EUPE3",
       "growthHabit": "forb",
@@ -5706,7 +5667,7 @@
     },
     {
       "genus": "Pontederia",
-      "specificEpithet": "cordata",
+      "species": "cordata",
       "commonNames": ["Pickerelweed"],
       "usdaCode": "POCO14",
       "growthHabit": "forb",
@@ -5731,7 +5692,7 @@
     },
     {
       "genus": "Hippuris",
-      "specificEpithet": "vulgaris",
+      "species": "vulgaris",
       "commonNames": ["Common Mare's Tail"],
       "usdaCode": "HIVU2",
       "growthHabit": "forb",
@@ -5752,7 +5713,7 @@
     },
     {
       "genus": "Sagittaria",
-      "specificEpithet": "latifolia",
+      "species": "latifolia",
       "commonNames": ["Broadleaf Arrowhead"],
       "usdaCode": "SALA2",
       "growthHabit": "forb",
@@ -5767,7 +5728,7 @@
     },
     {
       "genus": "Zizia",
-      "specificEpithet": "aurea",
+      "species": "aurea",
       "commonNames": ["Golden Zizia"],
       "usdaCode": "ZIAU",
       "growthHabit": "forb",
@@ -5782,7 +5743,7 @@
     },
     {
       "genus": "Eleocharis",
-      "specificEpithet": "acicularis",
+      "species": "acicularis",
       "commonNames": ["Needle Spikerush", "Dwarf Hairgrass"],
       "usdaCode": "ELAC",
       "growthHabit": "graminoid",
@@ -5797,7 +5758,7 @@
     },
     {
       "genus": "Penstemon",
-      "specificEpithet": "hirsutus",
+      "species": "hirsutus",
       "commonNames": ["Hairy Beardtongue"],
       "usdaCode": "PEHI",
       "growthHabit": "forb",
@@ -5812,7 +5773,7 @@
     },
     {
       "genus": "Antennaria",
-      "specificEpithet": "neglecta",
+      "species": "neglecta",
       "commonNames": ["Field Pussytoes"],
       "usdaCode": "ANNE",
       "growthHabit": "forb",
@@ -5827,7 +5788,7 @@
     },
     {
       "genus": "Agastache",
-      "specificEpithet": "nepetoides",
+      "species": "nepetoides",
       "commonNames": ["Yellow Giant Hyssop"],
       "usdaCode": "AGNE2",
       "growthHabit": "forb",
@@ -5842,7 +5803,7 @@
     },
     {
       "genus": "Agastache",
-      "specificEpithet": "foeniculum",
+      "species": "foeniculum",
       "commonNames": ["Blue Giant Hyssop", "Anise Hyssop"],
       "usdaCode": "AGFO",
       "growthHabit": "forb",
@@ -5857,7 +5818,7 @@
     },
     {
       "genus": "Coreopsis",
-      "specificEpithet": "tripteris",
+      "species": "tripteris",
       "commonNames": ["Tall Tickseed"],
       "usdaCode": "COTR4",
       "growthHabit": "forb",
@@ -5872,37 +5833,7 @@
     },
     {
       "genus": "Verbena",
-      "specificEpithet": "stricta",
-      "commonNames": ["Hoary Vervain", "Hoary Verbean"],
-      "usdaCode": "VEST",
-      "growthHabit": "forb",
-      "media": {
-        "images": []
-      },
-      "relatedContent": [],
-      "sources": [],
-      "editHistory": [
-        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
-      ]
-    },
-    {
-      "genus": "Verbena",
-      "specificEpithet": "stricta",
-      "commonNames": ["Hoary Vervain", "Hoary Verbean"],
-      "usdaCode": "VEST",
-      "growthHabit": "forb",
-      "media": {
-        "images": []
-      },
-      "relatedContent": [],
-      "sources": [],
-      "editHistory": [
-        { "time": "2021-04-21T21:04:23-04:00", "author": "matthew@serotonin.ai" }
-      ]
-    },
-    {
-      "genus": "Verbena",
-      "specificEpithet": "stricta",
+      "species": "stricta",
       "commonNames": ["Hoary Vervain", "Hoary Verbean"],
       "usdaCode": "VEST",
       "growthHabit": "forb",
@@ -5917,7 +5848,7 @@
     },
     {
       "genus": "Solidago",
-      "specificEpithet": "juncea",
+      "species": "juncea",
       "commonNames": ["Early Goldenrod"],
       "usdaCode": "SOJU",
       "growthHabit": "forb",
@@ -5932,7 +5863,7 @@
     },
     {
       "genus": "Actaea",
-      "specificEpithet": "racemosa",
+      "species": "racemosa",
       "commonNames": ["Black Cohosh", "Black Baneberry"],
       "usdaCode": "ACRA7",
       "growthHabit": "forb",
@@ -5947,7 +5878,7 @@
     },
     {
       "genus": "Actaea",
-      "specificEpithet": "rubra",
+      "species": "rubra",
       "commonNames": ["Red Baneberry"],
       "usdaCode": "ACRU2",
       "growthHabit": "forb",
@@ -5962,7 +5893,7 @@
     },
     {
       "genus": "Thalictrum",
-      "specificEpithet": "dioicum",
+      "species": "dioicum",
       "commonNames": ["Early Meadow Rue"],
       "usdaCode": "THDI",
       "growthHabit": "forb",
@@ -5977,7 +5908,7 @@
     },
     {
       "genus": "Deschampsia",
-      "specificEpithet": "cespitosa",
+      "species": "cespitosa",
       "commonNames": ["Tufted Hairgrass"],
       "usdaCode": "DECE",
       "growthHabit": "graminoid",
@@ -5992,7 +5923,7 @@
     },
     {
       "genus": "Carex",
-      "specificEpithet": "plantaginea",
+      "species": "plantaginea",
       "commonNames": ["Plantainleaf Sedge"],
       "usdaCode": "CAPL4",
       "growthHabit": "graminoid",
