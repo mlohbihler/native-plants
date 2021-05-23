@@ -36,7 +36,7 @@ export default defineComponent({
     onToggle(label: string, value: boolean) {
       this.$emit(
         'update:modelValue',
-        this.modelValue.map((e) => (e.label === label ? { label, value } : e))
+        this.modelValue.map((e) => (e.label === label ? { label, value } : e)),
       )
     },
   },
