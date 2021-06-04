@@ -1,5 +1,5 @@
 <template>
-  <span :class="{ toggle: true, on: modelValue }" @click="onClick()">{{ label }}</span>
+  <div :class="{ toggle: true, on: modelValue }" @click="onClick()">{{ label }}</div>
 </template>
 
 <script lang="ts">
@@ -31,6 +31,7 @@ export default defineComponent({
   padding: 8px 12px;
   cursor: pointer;
   user-select: none;
+  display: inline-block;
 
   &:hover {
     border-color: #15a532;

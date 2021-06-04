@@ -1,14 +1,14 @@
 <template>
   <b>{{ label }}</b>
-  <ul>
-    <li v-for="toggle in modelValue" :key="toggle.label">
+  <div class="toggle-set">
+    <div class="toggle-item" v-for="toggle in modelValue" :key="toggle.label">
       <Toggle
         :label="toggle.label"
         :model-value="toggle.value"
         @update:model-value="onToggle(toggle.label, $event)"
       />
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -36,7 +36,7 @@ export default defineComponent({
     onToggle(label: string, value: boolean) {
       this.$emit(
         'update:modelValue',
-        this.modelValue.map((e) => (e.label === label ? { label, value } : e)),
+        this.modelValue.map((e) => (e.label === label ? { ...e, label, value } : e)),
       )
     },
   },
@@ -44,15 +44,13 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-ul {
-  list-style: none;
-  padding: 10px 0 20px 0;
-  margin: 0;
-
-  li {
-    display: inline-block;
-    padding: 5px;
-    margin: 0px;
-  }
+.toggle-set {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  padding: 10px 0;
+}
+.toggle-item {
+  margin: 0 5px 5px 0;
 }
 </style>
