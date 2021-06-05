@@ -1,20 +1,21 @@
 <template>
-  <div :class="{ toggle: true, on: modelValue }" @click="onClick()">{{ label }}</div>
+  <div :class="{ toggle: true, on }" @click="onClick()">{{ label }}</div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'Toggle',
+  name: 'ToggleItem',
   props: {
+    id: String,
     label: String,
-    modelValue: Boolean,
+    on: Boolean,
   },
-  emits: ['update:modelValue'],
+  emits: ['onToggle'],
   methods: {
     onClick() {
-      this.$emit('update:modelValue', !this.modelValue)
+      this.$emit('onToggle')
     },
   },
 })
@@ -28,7 +29,7 @@ export default defineComponent({
   border-radius: 5px;
   white-space: nowrap;
   transition: all 0.2s;
-  padding: 8px 12px;
+  padding: 8px 8px;
   cursor: pointer;
   user-select: none;
   display: inline-block;

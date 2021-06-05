@@ -1,11 +1,71 @@
 <template>
-  <div class="hello">
+  <div class="search">
     <div class="search">
       <b>Keywords</b>
       <div><input type="text" v-model="keywords" /></div>
     </div>
-    <div><ToggleSet label="Shade Tolerance" v-model="shadeTolerance" /></div>
-    <div><ToggleSet label="Drainage" v-model="drainage" /></div>
+    <div>
+      <ToggleSet
+        label="Shade Tolerance"
+        :selection="shadeTolerance"
+        :options="[
+          { id: 'intolerant', label: 'Full Sun' },
+          { id: 'intermediate', label: 'Partial Sun' },
+          { id: 'tolerant', label: 'Shade' },
+        ]"
+        @onChange="onShadeToleranceChange"
+      />
+    </div>
+    <div>
+      <ToggleSet
+        label="Drainage"
+        :selection="drainage"
+        :options="[
+          { id: 'dry', value: false, label: 'Dry' },
+          { id: 'medium', value: false, label: 'Medium' },
+          { id: 'wet', value: false, label: 'Wet' },
+        ]"
+        @onChange="onDrainageChange"
+      />
+    </div>
+    <div>
+      <RadioSet
+        label="Growth Habit"
+        :selected="growthHabit"
+        :options="[
+          { id: 'forb', label: 'Forb' },
+          { id: 'shrub', label: 'Shrub' },
+          { id: 'subshrub', label: 'Subshrub' },
+          { id: 'tree', label: 'Tree' },
+          { id: 'vine', label: 'Vine' },
+          { id: 'graminoid', label: 'Graminoid' },
+          { id: 'lichenous', label: 'Lichenous' },
+          { id: 'nonvascular', label: 'Nonvascular' },
+        ]"
+        @onChange="onGrowthHabitChange"
+      />
+    </div>
+    <div>
+      <ToggleSet
+        label="Bloom Time"
+        :selection="bloomTime"
+        :options="[
+          { id: 'jan', label: 'J' },
+          { id: 'feb', label: 'F' },
+          { id: 'mar', label: 'M' },
+          { id: 'apr', label: 'A' },
+          { id: 'may', label: 'M' },
+          { id: 'jun', label: 'J' },
+          { id: 'jul', label: 'J' },
+          { id: 'aug', label: 'A' },
+          { id: 'sep', label: 'S' },
+          { id: 'oct', label: 'O' },
+          { id: 'nov', label: 'N' },
+          { id: 'dec', label: 'D' },
+        ]"
+        @onChange="onBloomTimeChange"
+      />
+    </div>
     <div v-for="result in searchResults" :key="`${result.plant.genus}|${result.plant.species}`">
       <router-link to="/plant">
         {{ result.plant.commonNames[0] }}
@@ -19,27 +79,22 @@
 import { useStore } from '@/store'
 import { defineComponent } from 'vue'
 import { diceCoefficient as stringComparator } from 'string-comparison'
+import RadioSet from '@/components/RadioSet.vue'
 import ToggleSet from '@/components/ToggleSet.vue'
 import { haveIntersection } from '@/util/util'
 
 export default defineComponent({
   name: 'Search',
-  components: { ToggleSet },
+  components: { RadioSet, ToggleSet },
   data() {
     return {
       store: useStore(),
       keywords: useStore().state.searchKeywords,
       // TODO: move these into store.state
-      shadeTolerance: [
-        { id: 'intolerant', value: false, label: 'Full Sun' },
-        { id: 'intermediate', value: false, label: 'Partial Sun' },
-        { id: 'tolerant', value: false, label: 'Shade' },
-      ],
-      drainage: [
-        { id: 'dry', value: false, label: 'Dry' },
-        { id: 'medium', value: false, label: 'Medium' },
-        { id: 'wet', value: false, label: 'Wet' },
-      ],
+      shadeTolerance: [] as string[],
+      drainage: [] as string[],
+      growthHabit: null as string | null,
+      bloomTime: [] as string[],
     }
   },
   computed: {
@@ -52,20 +107,34 @@ export default defineComponent({
       this.store.commit('updateSearchKeywords', this.keywords)
       this.doSearch()
     },
-    shadeTolerance() {
-      this.doSearch()
-    },
-    drainage() {
-      this.doSearch()
-    },
   },
   methods: {
+    onShadeToleranceChange(values: string[]) {
+      this.shadeTolerance = values
+      this.doSearch()
+    },
+    onDrainageChange(values: string[]) {
+      this.drainage = values
+      this.doSearch()
+    },
+    onGrowthHabitChange(value: string) {
+      this.growthHabit = value
+      this.doSearch()
+    },
+    onBloomTimeChange(values: string[]) {
+      this.bloomTime = values
+      this.doSearch()
+    },
     doSearch() {
       const keywords = this.keywords.trim()
-      const shadeTolerance = this.shadeTolerance.filter((e) => e.value).map((e) => e.id)
-      const drainage = this.drainage.filter((e) => e.value).map((e) => e.id)
 
-      if (!keywords && !shadeTolerance.length && !drainage.length) {
+      if (
+        !keywords &&
+        !this.shadeTolerance.length &&
+        !this.drainage.length &&
+        !this.growthHabit &&
+        !this.bloomTime.length
+      ) {
         this.store.commit('updateSearchResults', [])
         return
       }
@@ -74,12 +143,21 @@ export default defineComponent({
         'updateSearchResults',
         this.store.state.plantDatabase.plants
           .flatMap((plant) => {
-            if (shadeTolerance.length && !haveIntersection(shadeTolerance, plant.shadeTolerance)) {
+            if (
+              this.shadeTolerance.length &&
+              !haveIntersection(this.shadeTolerance, plant.shadeTolerance)
+            ) {
               return []
             }
-            if (drainage.length && !haveIntersection(drainage, plant.moisture)) {
+            if (this.drainage.length && !haveIntersection(this.drainage, plant.moisture)) {
               return []
             }
+            if (this.growthHabit && this.growthHabit !== plant.growthHabit) {
+              return []
+            }
+            // if (bloomTime.length && !haveIntersection(drainage, plant.moisture)) {
+            //   return []
+            // }
 
             let ranking = 0
             if (keywords) {

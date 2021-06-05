@@ -1,12 +1,12 @@
 <template>
   <label>{{ label }}</label>
-  <div class="toggle-set">
-    <div class="toggle-item" v-for="toggle in options" :key="toggle.id">
+  <div class="radio-set">
+    <div class="radio-item" v-for="radio in options" :key="radio.id">
       <ToggleItem
-        :id="toggle.id"
-        :label="toggle.label"
-        :on="selection.includes(toggle.id)"
-        @onToggle="onToggle(toggle.id)"
+        :id="radio.id"
+        :label="radio.label"
+        :on="radio.id === selected"
+        @onToggle="onToggle(radio.id)"
       />
     </div>
   </div>
@@ -17,31 +17,26 @@ import { defineComponent } from 'vue'
 
 import ToggleItem from '@/components/ToggleItem.vue'
 
-type ToggleInput = {
+type RadioInput = {
   id: string
   label: string
 }
 
 export default defineComponent({
-  name: 'ToggleSet',
+  name: 'RadioSet',
   components: { ToggleItem },
   props: {
     label: String,
-    selection: {
-      type: Object as () => Array<string>,
-      required: true,
-    },
+    selected: String, // The id of the selected option, or null.
     options: {
-      type: Object as () => Array<ToggleInput>,
+      type: Object as () => Array<RadioInput>,
       required: true,
     },
   },
   emits: ['onChange'],
   methods: {
     onToggle(id: string) {
-      const filtered = this.selection.filter((e) => e !== id)
-      const newValue = filtered.length === this.selection.length ? [...filtered, id] : filtered
-      this.$emit('onChange', newValue)
+      this.$emit('onChange', id === this.selected ? null : id)
     },
   },
 })
@@ -51,13 +46,13 @@ export default defineComponent({
 label {
   font-weight: bold;
 }
-.toggle-set {
+.radio-set {
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
   padding: 10px 0;
 }
-.toggle-item {
+.radio-item {
   margin: 0 5px 5px 0;
 }
 </style>
