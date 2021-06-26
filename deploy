@@ -1,0 +1,3 @@
+yarn build
+aws --profile native-plants s3 sync dist s3://native-serotoninsoftware.com/ --acl public-read --delete
+aws --profile native-plants cloudfront create-invalidation --distribution-id E3D45DZFX275YX --paths /index.html
