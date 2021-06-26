@@ -12,6 +12,7 @@
           { id: 'intolerant', label: 'Full Sun' },
           { id: 'intermediate', label: 'Partial Sun' },
           { id: 'tolerant', label: 'Shade' },
+          { id: 'unknown', label: 'Unknown' },
         ]"
         @onChange="onShadeToleranceChange"
       />
@@ -29,9 +30,9 @@
       />
     </div>
     <div>
-      <RadioSet
+      <ToggleSet
         label="Growth Habit"
-        :selected="growthHabit"
+        :selection="growthHabit"
         :options="[
           { id: 'forb', label: 'Forb' },
           { id: 'shrub', label: 'Shrub' },
@@ -67,10 +68,13 @@
       />
     </div>
     <div v-for="result in searchResults" :key="`${result.plant.genus}|${result.plant.species}`">
-      <router-link to="/plant">
+      <router-link :to="`/plant/${result.plant.genus}/${result.plant.species}`">
         {{ result.plant.commonNames[0] }}
         <span class="scientifical">({{ result.plant.genus }} {{ result.plant.species }})</span>
       </router-link>
+    </div>
+    <div v-if="hiddenSearchResultCount > 0" class="hidden-results">
+      {{ hiddenSearchResultCount }} matches not shown
     </div>
   </div>
 </template>
@@ -79,13 +83,12 @@
 import { useStore } from '@/store'
 import { defineComponent } from 'vue'
 import { diceCoefficient as stringComparator } from 'string-comparison'
-import RadioSet from '@/components/RadioSet.vue'
 import ToggleSet from '@/components/ToggleSet.vue'
 import { haveIntersection } from '@/util/util'
 
 export default defineComponent({
   name: 'Search',
-  components: { RadioSet, ToggleSet },
+  components: { ToggleSet },
   data() {
     return {
       store: useStore(),
@@ -93,13 +96,16 @@ export default defineComponent({
       // TODO: move these into store.state
       shadeTolerance: [] as string[],
       drainage: [] as string[],
-      growthHabit: null as string | null,
+      growthHabit: [] as string[],
       bloomTime: [] as string[],
     }
   },
   computed: {
     searchResults() {
       return useStore().state.searchResults
+    },
+    hiddenSearchResultCount() {
+      return useStore().state.hiddenSearchResultCount
     },
   },
   watch: {
@@ -117,8 +123,8 @@ export default defineComponent({
       this.drainage = values
       this.doSearch()
     },
-    onGrowthHabitChange(value: string) {
-      this.growthHabit = value
+    onGrowthHabitChange(values: string[]) {
+      this.growthHabit = values
       this.doSearch()
     },
     onBloomTimeChange(values: string[]) {
@@ -139,45 +145,43 @@ export default defineComponent({
         return
       }
 
-      this.store.commit(
-        'updateSearchResults',
-        this.store.state.plantDatabase.plants
-          .flatMap((plant) => {
-            if (
-              this.shadeTolerance.length &&
-              !haveIntersection(this.shadeTolerance, plant.shadeTolerance)
-            ) {
-              return []
-            }
-            if (this.drainage.length && !haveIntersection(this.drainage, plant.moisture)) {
-              return []
-            }
-            if (this.growthHabit && this.growthHabit !== plant.growthHabit) {
-              return []
-            }
-            // if (bloomTime.length && !haveIntersection(drainage, plant.moisture)) {
-            //   return []
-            // }
+      const selected = this.store.state.plantDatabase.plants
+        .flatMap((plant) => {
+          if (
+            this.shadeTolerance.length &&
+            !haveIntersection(this.shadeTolerance, plant.shadeTolerance)
+          ) {
+            return []
+          }
+          if (this.drainage.length && !haveIntersection(this.drainage, plant.moisture)) {
+            return []
+          }
+          if (this.growthHabit.length && !this.growthHabit.includes(plant.growthHabit)) {
+            return []
+          }
+          // if (bloomTime.length && !haveIntersection(drainage, plant.moisture)) {
+          //   return []
+          // }
 
-            let ranking = 0
-            if (keywords) {
-              const commonNames = plant.commonNames.map((name) => name.replace('-', ''))
-              const searchContent = [plant.genus, plant.species, ...commonNames].join(' ')
-              ranking = stringComparator.similarity(this.keywords, searchContent)
-            }
+          let ranking = 0
+          if (keywords) {
+            const commonNames = plant.commonNames.map((name) => name.replace('-', ''))
+            const searchContent = [plant.genus, plant.species, ...commonNames].join(' ')
+            ranking = stringComparator.similarity(this.keywords, searchContent)
+          }
 
-            return [{ plant, ranking }]
+          return [{ plant, ranking }]
+        })
+        .sort((a, b) => {
+          if (keywords) {
+            return b.ranking - a.ranking
+          }
+          return a.plant.commonNames[0].localeCompare(b.plant.commonNames[0], undefined, {
+            sensitivity: 'base',
           })
-          .sort((a, b) => {
-            if (keywords) {
-              return b.ranking - a.ranking
-            }
-            return a.plant.commonNames[0].localeCompare(b.plant.commonNames[0], undefined, {
-              sensitivity: 'base',
-            })
-          })
-          .slice(0, 10),
-      )
+        })
+      this.store.commit('updateHiddenSearchResultCount', Math.max(0, selected.length - 10))
+      this.store.commit('updateSearchResults', selected.slice(0, 10))
     },
   },
 })
@@ -202,6 +206,10 @@ export default defineComponent({
     &:focus {
       border-color: #085718;
     }
+  }
+
+  .hidden-results {
+    margin-top: 10px;
   }
 }
 a {

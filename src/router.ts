@@ -16,10 +16,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: 'about' */ './views/About.vue'),
   },
   {
-    path: '/plant',
+    path: '/plant/:genus/:species',
     name: 'Plant',
     component: () => import(/* webpackChunkName: 'plant' */ './views/Plant.vue'),
   },
+  { path: '/:pathMatch(.*)*', redirect: '/' },
 ]
 
 const router = createRouter({

@@ -15,6 +15,7 @@ export interface State {
   plantDatabase: PlantDatabase
   searchKeywords: string
   searchResults: SearchResult[]
+  hiddenSearchResultCount: number
 }
 
 export const key: InjectionKey<Store<State>> = Symbol()
@@ -24,6 +25,7 @@ export default createStore<State>({
     plantDatabase,
     searchKeywords: '',
     searchResults: [],
+    hiddenSearchResultCount: 0,
   },
   getters: {},
   mutations: {
@@ -32,6 +34,9 @@ export default createStore<State>({
     },
     updateSearchResults(state, results) {
       state.searchResults = results
+    },
+    updateHiddenSearchResultCount(state, count) {
+      state.hiddenSearchResultCount = count
     },
   },
   actions: {},

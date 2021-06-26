@@ -31,26 +31,21 @@ export type Plant = {
   sources?: string[]
 }
 
-type FgcaCommonality = {
-  ecoRegion: {
-    code: string // Indicates an entire region, e.g. 6E
-    commonality: Commonality
-  }
-  ecoDistrict: {
-    code: string // Indicates a district within a region, e.g. 6E-7
-    commonality: Commonality
-  }
+export type FgcaCommonality = {
+  ecoRegion: EcoArea // Indicates an entire region, e.g. 6E
+  ecoDistrict: EcoArea // Indicates a district within a region, e.g. 6E-7
 }
-
+export type EcoArea = {
+  code: string
+  commonality: Commonality
+}
 type Commonality = CommonalityCode | CountyCommonality
-type CommonalityCode = 'C' | 'U' | 'R' // Common, uncommon, rare
-type CountyCommonality = {
-  C: County[]
-  U: County[]
-  R: County[]
-  X: County[] // Except
+export type CommonalityCode = 'C' | 'U' | 'R' // Common, uncommon, rare
+export type CountyCommonalityCode = CommonalityCode | 'X' // Common, uncommon, rare
+export type CountyCommonality = {
+  [key in CountyCommonalityCode]: County[]
 }
-type County = number
+export type County = number
 
 type HardinessZoneRange = {
   min: HardinessZone
@@ -98,6 +93,7 @@ type Soils = {
 type SoilGranularity = 'sandy loam' | 'loam' | 'clay loam'
 
 type Media = {
+  hero?: string
   images: string[]
 }
 

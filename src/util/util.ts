@@ -7,7 +7,7 @@ export const haveIntersection = <T = unknown>(
   arr2: T[] | undefined,
 ): boolean => {
   if (arr1 == undefined || arr2 === undefined) {
-    return true
+    return false
   }
   return intersection(arr1, arr2).length > 0
 }

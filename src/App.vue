@@ -26,8 +26,10 @@ body {
   width: 100%;
   height: 100vh;
   min-height: 100%;
+  background-color: #000;
 
   img {
+    opacity: 0.4;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -53,9 +55,5 @@ body {
       color: #42b983;
     }
   }
-}
-
-#content {
-  padding: 0 20px;
 }
 </style>
