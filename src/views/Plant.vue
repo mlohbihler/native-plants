@@ -13,15 +13,15 @@
     <div class="info" v-if="plant.leafRetention">
       <span>Leaf retention</span>: {{ plant.leafRetention ? 'yes' : 'no' }}
     </div>
-    <div class="info" v-if="plant.hardinessZone">
-      <span>Hardiness zones</span>: {{ plant.hardinessZone.min }} to {{ plant.hardinessZone.max }}
+    <div class="info" v-if="plant.hardinessZones">
+      <span>Hardiness zones</span>: {{ plant.hardinessZones.min }} to {{ plant.hardinessZones.max }}
     </div>
     <div class="info" v-if="plant.matureSize">
-      <span>Hardiness zones</span>: {{ plant.matureSize.height }} {{ plant.matureSize.unit }}
+      <span>Mature size</span>: {{ plant.matureSize.height }} {{ plant.matureSize.unit }}
     </div>
     <div class="info" v-if="plant.duration"><span>Lifecycle</span>: {{ plant.duration }}</div>
-    <div class="info" v-if="plant.shadeTolerance">
-      <span>Shade tolerance</span>: {{ plant.shadeTolerance.join(', ') }}
+    <div class="info" v-if="plant.lightReqirement">
+      <span>Light requirements</span>: {{ plant.lightReqirement.join(', ') }}
     </div>
     <div class="info" v-if="plant.moisture">
       <span>Moisture requirements</span>: {{ plant.moisture.join(', ') }}

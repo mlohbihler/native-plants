@@ -23,7 +23,7 @@ export type Plant = {
   hardinessZone?: HardinessZoneRange
   matureSize: MatureSize
   duration?: 'annual' | 'biennial' | 'perennial'
-  shadeTolerance: ShadeTolerance[]
+  lightRequirement: LightRequirement[]
   moisture: Moisture[]
   soils: Soils
   media: Media
@@ -84,7 +84,7 @@ type MatureSize = {
   height: number
 }
 
-type ShadeTolerance = 'tolerant' | 'intermediate' | 'intolerant'
+type LightRequirement = 'shade' | 'partial' | 'sun'
 type Moisture = 'dry' | 'medium' | 'wet'
 type Soils = {
   granularity: SoilGranularity[]

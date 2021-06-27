@@ -2,25 +2,24 @@
   <div class="search">
     <div class="search">
       <b>Keywords</b>
-      <div><input type="text" v-model="keywords" /></div>
+      <div><input type="text" v-model="criteria.keywords" /></div>
     </div>
     <div>
       <ToggleSet
-        label="Shade Tolerance"
-        :selection="shadeTolerance"
+        label="Light requirement"
+        :selection="criteria.lightRequirement"
         :options="[
-          { id: 'intolerant', label: 'Full Sun' },
-          { id: 'intermediate', label: 'Partial Sun' },
-          { id: 'tolerant', label: 'Shade' },
-          { id: 'unknown', label: 'Unknown' },
+          { id: 'sun', label: 'Full Sun' },
+          { id: 'partial', label: 'Partial Sun' },
+          { id: 'shade', label: 'Shade' },
         ]"
-        @onChange="onShadeToleranceChange"
+        @onChange="onLightRequirementChange"
       />
     </div>
     <div>
       <ToggleSet
         label="Drainage"
-        :selection="drainage"
+        :selection="criteria.drainage"
         :options="[
           { id: 'dry', value: false, label: 'Dry' },
           { id: 'medium', value: false, label: 'Medium' },
@@ -32,7 +31,7 @@
     <div>
       <ToggleSet
         label="Growth Habit"
-        :selection="growthHabit"
+        :selection="criteria.growthHabit"
         :options="[
           { id: 'forb', label: 'Forb' },
           { id: 'shrub', label: 'Shrub' },
@@ -49,7 +48,7 @@
     <div>
       <ToggleSet
         label="Bloom Time"
-        :selection="bloomTime"
+        :selection="criteria.bloomTime"
         :options="[
           { id: 'jan', label: 'J' },
           { id: 'feb', label: 'F' },
@@ -92,12 +91,7 @@ export default defineComponent({
   data() {
     return {
       store: useStore(),
-      keywords: useStore().state.searchKeywords,
-      // TODO: move these into store.state
-      shadeTolerance: [] as string[],
-      drainage: [] as string[],
-      growthHabit: [] as string[],
-      bloomTime: [] as string[],
+      criteria: useStore().state.searchCriteria,
     }
   },
   computed: {
@@ -110,36 +104,44 @@ export default defineComponent({
   },
   watch: {
     keywords() {
-      this.store.commit('updateSearchKeywords', this.keywords)
       this.doSearch()
     },
   },
   methods: {
-    onShadeToleranceChange(values: string[]) {
-      this.shadeTolerance = values
+    onLightRequirementChange(values: string[]) {
+      this.criteria.lightRequirement = values
       this.doSearch()
     },
     onDrainageChange(values: string[]) {
-      this.drainage = values
+      this.criteria.drainage = values
       this.doSearch()
     },
     onGrowthHabitChange(values: string[]) {
-      this.growthHabit = values
+      this.criteria.growthHabit = values
       this.doSearch()
     },
     onBloomTimeChange(values: string[]) {
-      this.bloomTime = values
+      this.criteria.bloomTime = values
       this.doSearch()
     },
     doSearch() {
-      const keywords = this.keywords.trim()
+      this.store.commit('updateSearchCriteria', this.criteria)
+
+      const {
+        keywords: untrimmedKeywords,
+        lightRequirement,
+        drainage,
+        growthHabit,
+        bloomTime,
+      } = this.criteria
+      const keywords = untrimmedKeywords.trim()
 
       if (
         !keywords &&
-        !this.shadeTolerance.length &&
-        !this.drainage.length &&
-        !this.growthHabit &&
-        !this.bloomTime.length
+        !lightRequirement.length &&
+        !drainage.length &&
+        !growthHabit &&
+        !bloomTime.length
       ) {
         this.store.commit('updateSearchResults', [])
         return
@@ -148,15 +150,15 @@ export default defineComponent({
       const selected = this.store.state.plantDatabase.plants
         .flatMap((plant) => {
           if (
-            this.shadeTolerance.length &&
-            !haveIntersection(this.shadeTolerance, plant.shadeTolerance)
+            lightRequirement.length &&
+            !haveIntersection(lightRequirement, plant.lightRequirement)
           ) {
             return []
           }
-          if (this.drainage.length && !haveIntersection(this.drainage, plant.moisture)) {
+          if (drainage.length && !haveIntersection(drainage, plant.moisture)) {
             return []
           }
-          if (this.growthHabit.length && !this.growthHabit.includes(plant.growthHabit)) {
+          if (growthHabit.length && !growthHabit.includes(plant.growthHabit)) {
             return []
           }
           // if (bloomTime.length && !haveIntersection(drainage, plant.moisture)) {
@@ -167,7 +169,7 @@ export default defineComponent({
           if (keywords) {
             const commonNames = plant.commonNames.map((name) => name.replace('-', ''))
             const searchContent = [plant.genus, plant.species, ...commonNames].join(' ')
-            ranking = stringComparator.similarity(this.keywords, searchContent)
+            ranking = stringComparator.similarity(keywords, searchContent)
           }
 
           return [{ plant, ranking }]

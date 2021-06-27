@@ -11,9 +11,17 @@ export type SearchResult = {
   ranking: number
 }
 
+export interface SearchCriteria {
+  keywords: string
+  lightRequirement: string[]
+  drainage: string[]
+  growthHabit: string[]
+  bloomTime: string[]
+}
+
 export interface State {
   plantDatabase: PlantDatabase
-  searchKeywords: string
+  searchCriteria: SearchCriteria
   searchResults: SearchResult[]
   hiddenSearchResultCount: number
 }
@@ -23,14 +31,20 @@ export const key: InjectionKey<Store<State>> = Symbol()
 export default createStore<State>({
   state: {
     plantDatabase,
-    searchKeywords: '',
+    searchCriteria: {
+      keywords: '',
+      lightRequirement: [],
+      drainage: [],
+      growthHabit: [],
+      bloomTime: [],
+    },
     searchResults: [],
     hiddenSearchResultCount: 0,
   },
   getters: {},
   mutations: {
-    updateSearchKeywords(state, keywords: string) {
-      state.searchKeywords = keywords
+    updateSearchCriteria(state, criteria: SearchCriteria) {
+      state.searchCriteria = criteria
     },
     updateSearchResults(state, results) {
       state.searchResults = results
