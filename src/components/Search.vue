@@ -2,7 +2,7 @@
   <div class="search">
     <div class="search">
       <b>Keywords</b>
-      <div><input type="text" v-model="criteria.keywords" /></div>
+      <div><input type="text" v-model="keywords" /></div>
     </div>
     <div>
       <ToggleSet
@@ -92,6 +92,7 @@ export default defineComponent({
     return {
       store: useStore(),
       criteria: useStore().state.searchCriteria,
+      keywords: useStore().state.searchCriteria.keywords,
     }
   },
   computed: {
@@ -104,6 +105,7 @@ export default defineComponent({
   },
   watch: {
     keywords() {
+      this.criteria.keywords = this.keywords
       this.doSearch()
     },
   },

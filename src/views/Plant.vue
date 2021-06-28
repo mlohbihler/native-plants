@@ -62,7 +62,7 @@ export default defineComponent({
     const { genus, species } = this.$route.params
     // Find the requested plant.
     this.plant = this.store.state.plantDatabase.plants.find(
-      (plant) => plant.genus === genus || plant.species == species,
+      (plant) => plant.genus === genus && plant.species == species,
     )
     if (!this.plant) {
       this.$router.push({ name: '/' })
