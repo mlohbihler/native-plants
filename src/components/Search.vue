@@ -149,6 +149,7 @@ export default defineComponent({
         return
       }
 
+      const splitKeywords = keywords.split(/\s+/)
       const selected = this.store.state.plantDatabase.plants
         .flatMap((plant) => {
           if (
@@ -169,9 +170,19 @@ export default defineComponent({
 
           let ranking = 0
           if (keywords) {
-            const commonNames = plant.commonNames.map((name) => name.replace('-', ''))
-            const searchContent = [plant.genus, plant.species, ...commonNames].join(' ')
-            ranking = stringComparator.similarity(keywords, searchContent)
+            const commonNames = plant.commonNames.flatMap((name) => name.split(/[\s-]+/))
+            const names = [plant.genus, plant.species, ...commonNames]
+
+            // Find the best similarity score for each entered keyword, and then average them.
+            ranking =
+              splitKeywords.reduce((rankSum, keyword) => {
+                return (
+                  rankSum +
+                  names.reduce((maxRank, name) => {
+                    return Math.max(maxRank, stringComparator.similarity(keyword, name))
+                  }, 0)
+                )
+              }, 0) / keywords.length
           }
 
           return [{ plant, ranking }]
